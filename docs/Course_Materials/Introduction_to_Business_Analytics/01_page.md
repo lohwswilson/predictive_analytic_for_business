@@ -1,5 +1,5 @@
 ---
-title: Introduction to Business Analytics
+title: Introduction to Business Analytics XXX
 author: [Wilson Loh]
 date: 2022-05-01
 ---
@@ -8,8 +8,54 @@ date: 2022-05-01
 
 Business analytics is a field that utilizes a variety of techniques and tools to convert unprocessed data into valuable insights for businesses. This data can come from diverse sources, including standard spreadsheets and conventional databases, along with social media platforms such as Twitter and Facebook. To achieve these insights, a spectrum of methods like statistical models and machine learning is employed. The primary objective of business analytics is to derive significant conclusions that aid in well-informed choices and play a role in an organization's achievements.
 
+### Examples for Data Analytics
 
-Each day, employees, supply chains, marketing endeavours, finance teams, and various other aspects of every business contribute to this wealth of data. Big data encompasses vast volumes of data originating from diverse sources and taking various forms. Many organizations have come to realize the benefits of amassing extensive data stores. However, the mere collection and storage of big data are insufficient; it's imperative to harness its potential. Thanks to the rapid advancement of technology, organizations can utilize business analytics to convert terabytes of data into actionable insights (_Big Data Analytics: What It Is, How It Works, Benefits, and Challenges_, 2023).
+#### Descriptive Analytics with Sales Data
+   - **Scenario:** A retail company wants to understand its sales performance over the last quarter.
+   - **Data Source:** Sales transactions recorded in spreadsheets or databases.
+   - **Techniques:** Use descriptive statistics to summarize sales data, identifying trends, averages, and outliers.
+   - **Tools:** Excel or SQL for data extraction and summary; visualization tools like Tableau or Power BI for creating dashboards.
+
+#### Predictive Analytics in Marketing
+   - **Scenario:** A marketing team aims to forecast the success of an upcoming campaign.
+   - **Data Source:** Historical campaign performance data, customer demographics, and engagement metrics from social media platforms like Facebook.
+   - **Techniques:** Employ regression analysis or machine learning models to predict future campaign outcomes based on past data.
+   - **Tools:** R or Python for statistical modeling; machine learning libraries such as scikit-learn.
+
+#### Prescriptive Analytics in Supply Chain Management
+   - **Scenario:** A manufacturing company needs to optimize its supply chain to reduce costs and improve efficiency.
+   - **Data Source:** Supply chain logistics data, including supplier performance, transportation costs, and inventory levels.
+   - **Techniques:** Apply optimization algorithms and simulation models to determine the best supply chain strategy.
+   - **Tools:** Advanced analytics platforms like IBM Watson or SAS; optimization tools like Gurobi.
+
+#### Social Media Analytics for Brand Sentiment
+   - **Scenario:** A company wants to gauge public sentiment about its brand on Twitter.
+   - **Data Source:** Tweets mentioning the brand, collected via Twitter’s API.
+   - **Techniques:** Perform sentiment analysis using natural language processing (NLP) techniques.
+   - **Tools:** Python with NLP libraries like NLTK or SpaCy; visualization tools to present sentiment trends.
+
+Each day, employees, supply chains, marketing endeavours, finance teams, and various other aspects of every business contribute to this wealth of data. Big data encompasses vast volumes of data originating from diverse sources and taking various forms. Many organizations have come to realize the benefits of amassing extensive data stores. However, the mere collection and storage of big data are insufficient; it's imperative to harness its potential. Thanks to the rapid advancement of technology, organizations can utilize business analytics to convert terabytes of data into actionable insights (_Big Data Analytics: What It Is, How It Works, Benefits, and Challenges, 2023_).
+
+### Examples of Big Data Analytics
+
+#### Customer Segmentation in E-Commerce
+   - **Scenario:** An e-commerce platform wants to segment its customers for personalized marketing.
+   - **Data Source:** Clickstream data, purchase history, and customer reviews.
+   - **Techniques:** Use clustering algorithms to group customers based on purchasing behavior and preferences.
+   - **Tools:** Big data platforms like Apache Hadoop for data storage and processing; machine learning tools like Apache Spark MLlib.
+
+#### Fraud Detection in Finance
+   - **Scenario:** A bank aims to identify fraudulent transactions in real-time.
+   - **Data Source:** Transactional data, account details, and historical fraud cases.
+   - **Techniques:** Implement anomaly detection algorithms and machine learning models to flag suspicious activities.
+   - **Tools:** Real-time analytics platforms like Apache Kafka; machine learning frameworks such as TensorFlow.
+
+#### Operational Efficiency in Manufacturing
+   - **Scenario:** A manufacturing firm seeks to improve operational efficiency and reduce downtime.
+   - **Data Source:** Sensor data from machinery, production logs, and maintenance records.
+   - **Techniques:** Perform predictive maintenance using time series analysis and machine learning models to predict equipment failures before they occur.
+   - **Tools:** Industrial IoT platforms; analytics tools like SAS or Azure Machine Learning.
+
 
 ## Growth in Big Data and Business Analytics
 
