@@ -1,6 +1,6 @@
 site_name: Applied Analytics for Business
-site_url: https://github.com/ansis-ai/applied_analytics_for_business.git
-repo_url: https://github.com/willylohws/gethelp
+site_url: https://ansis-ai.github.io/applied_analytics_for_business/
+repo_url: https://github.com/ansis-ai/applied_analytics_for_business.git
 repo_name: ansis-ai/applied_analytics_for_business.git
 edit_uri: blob/3.0/docs/
 
@@ -74,15 +74,8 @@ extra:
         data: 0
   generator: false
 
-
 plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - autorefs
-  - awesome-pages
-  - macros
-  - redirects:
-      redirect_maps:
-        reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
 copyright: This documentation is hosted by <a href="https://ansis.com.sg/">ANSIS Pte Ltd</a>
 site_author: ANSIS

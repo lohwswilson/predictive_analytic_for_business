@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+# Applied Analytics for Business
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+The basic of business analytics
+Business analytics is a field that utilizes a variety of techniques and tools to convert unprocessed data into valuable insights for businesses. This data can come from diverse sources, including standard spreadsheets and conventional databases, along with social media platforms such as Twitter and Facebook. To achieve these insights, a spectrum of methods like statistical models and machine learning is employed. The primary objective of business analytics is to derive significant conclusions that aid in well-informed choices and play a role in an organization's achievements.
+Each day, employees, supply chains, marketing endeavours, finance teams, and various other aspects of every business contribute to this wealth of data. Big data encompasses vast volumes of data originating from diverse sources and taking various forms. Many organizations have come to realize the benefits of amassing extensive data stores. However, the mere collection and storage of big data are insufficient; it's imperative to harness its potential. Thanks to the rapid advancement of technology, organizations can utilize business analytics to convert terabytes of data into actionable insights (Big Data Analytics: What It Is, How It Works, Benefits, and Challenges, 2023).
