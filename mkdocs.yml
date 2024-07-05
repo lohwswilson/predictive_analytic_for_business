@@ -1,0 +1,88 @@
+site_name: Applied Analytics for Business
+site_url: https://github.com/ansis-ai/applied_analytics_for_business.git
+repo_url: https://github.com/willylohws/gethelp
+repo_name: ansis-ai/applied_analytics_for_business.git
+edit_uri: blob/3.0/docs/
+
+
+# Copyright
+copyright: ANSIS Pte Ltd 2024
+
+theme:
+  name: material
+  # logo: assets/pw_logo.png
+  # favicon: assets/pw_logo.png
+  font:
+    text: Roboto
+  navigation_depth: 5
+  highlightjs: true
+  hljs_languages:
+      - yaml
+      - python
+      - xml
+      - js
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - navigation.footer
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.indexes
+    - search.highlight
+    - search.share
+    - search.suggest
+    - navigation.path
+    - tabs
+  name: material
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary:  white
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue-grey
+      accent: light-blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra:
+  homepage: https://ansis.com.sg
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - manage
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    feedback:
+      - icon: material/emoticon-happy-outline
+        name: This page was helpful
+        data: 1
+      - icon: material/emoticon-sad-outline
+        name: This page could be improved
+        data: 0
+  generator: false
+
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - autorefs
+  - awesome-pages
+  - macros
+  - redirects:
+      redirect_maps:
+        reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
+copyright: This documentation is hosted by <a href="https://ansis.com.sg/">ANSIS Pte Ltd</a>
+site_author: ANSIS
