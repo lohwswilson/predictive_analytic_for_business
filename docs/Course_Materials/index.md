@@ -1,5 +1,7 @@
 ---
 title: Course Materials
+hide:
+  - toc
 ---
 <script src="https://cdn.tailwindcss.com"></script>
 

@@ -27,7 +27,7 @@ theme:
     - navigation.footer
     - navigation.instant
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.tracking
     - navigation.indexes
     - search.highlight
