@@ -1,0 +1,936 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="['Wilson Loh']">
+      
+      
+        <link rel="canonical" href="https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/04_Data_Dashboarding/">
+      
+      
+        <link rel="prev" href="../03_Data_Visualization/">
+      
+      
+        <link rel="next" href="../05_Data_Mining_Techniques/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+  <title>ANSIS</title>
+
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Adlam+Unjoined:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans Adlam Unjoined";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/output.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Data Dashboarding - Applied Analytics for Business" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://ansis-ai.github.io/applied_analytics_for_business/assets/images/social/Course_Materials/04_Data_Dashboarding.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/04_Data_Dashboarding/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Data Dashboarding - Applied Analytics for Business" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://ansis-ai.github.io/applied_analytics_for_business/assets/images/social/Course_Materials/04_Data_Dashboarding.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://ansis.com.sg" title="Applied Analytics for Business" class="md-header__button md-logo" aria-label="Applied Analytics for Business" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Applied Analytics for Business
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data Dashboarding
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ansis-ai/applied_analytics_for_business.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ansis-ai/applied_analytics_for_business.git
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Module Information
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  Course Materials
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Projects/" class="md-tabs__link">
+          
+  
+    
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ansis.com.sg" title="Applied Analytics for Business" class="md-nav__button md-logo" aria-label="Applied Analytics for Business" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Applied Analytics for Business
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ansis-ai/applied_analytics_for_business.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ansis-ai/applied_analytics_for_business.git
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Course Materials
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Course Materials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_Introduction_to_Business_Analytics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Business Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Descriptive_Analytics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Descriptve Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Data_Visualization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Data Dashboarding
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Data_Mining_Techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Mining Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Projects/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Projects
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Data Dashboarding</h1>
+
+<div><p><strong>Module: Applied Analytics for Business and Finance</strong></p>
+<p><strong>Topic 4: Data Dashboarding</strong></p>
+<p>How do individuals arrive at decisions without consulting data? They rely on their past experiences and their comprehension of a given situation. Historically, this approach was necessary due to the difficulty in obtaining and comprehending data. However, the landscape of data accessibility has transformed significantly:</p>
+<ol>
+<li>We now have the capability to acquire data from every facet of our business.</li>
+<li>Data storage has become cost-effective, allowing us to amass substantial volumes of data.</li>
+<li>A plethora of tools exists to effortlessly extract, transform, and visualize data.</li>
+</ol>
+<p>While dashboards cannot alter an individual's past experiences, they can serve as a means to surface data, enhancing one's understanding of a situation and aiding in better decision-making. Dashboards function as a bridge connecting data-oriented individuals (such as yourself) with business professionals (David, 2023).</p>
+<p><strong>Introduction to data dashboarding</strong></p>
+<p>Data analysis software can process vast volumes of data at impressive speeds, but there is a challenge when it comes to explaining the outcomes of this analysis. Currently, the primary method for accomplishing this is through visual representations. However, there is still room for interpretation in data visualization. Fortunately, technology is advancing in this regard. Narrative generation software can be integrated as a plugin into dashboards (Manning 2016).Top of Form</p>
+<p>Whenever there's a need to present information for the purpose of enhancing decision-making, the concept of designing a dashboard should be considered. A well-crafted dashboard serves as a platform to arrange multiple data visualizations, ensuring the provision of sufficient context for making well-informed decisions.</p>
+<p>For instance, take a look at this user data dashboard, designed as an illustrative example. This dashboard is designed to monitor key metrics for a SaaS (Software as a Service) company. It offers an immediate overview of essential data, including revenue, operational expenses, total user counts, and other pertinent information that can be assessed.</p>
+<p>Such a dashboard can be invaluable to the CEO or anyone within the organization, offering a high-level snapshot of the current situation and assisting in determining where to focus their attention. "<em>For instance, my operational expenses surpass my revenue; I should reach out to my COO to gain insights into our excessive spending</em>."</p>
+<p>This dashboard comprises various data visualizations, presenting viewers with the necessary context to glean insights and make informed decisions. An effective dashboard is also dynamic, adapting to changes in the underlying data automatically. This ensures that time-sensitive insights and decisions can be promptly addressed.</p>
+<p><strong>Data Dashboards vs Data Visualizations</strong></p>
+<p>Two common terms when it comes to analytics and reporting are “data dashboard” and “data visualization.” What’s the difference?</p>
+<p><strong>Data visualization</strong> involves the presentation of data in a visual format, aiming to enhance its comprehensibility and analysability.</p>
+<p><strong>Data dashboards</strong> serve as consolidated summaries of distinct yet interrelated data sets, presented in a manner that simplifies the comprehension of their interconnected information. Dashboards essentially fall under the category of data visualizations and commonly employ familiar visualization tools like graphs, charts, and tables.</p>
+<p><strong>3 Basic types of data dashboard</strong></p>
+<p>Data dashboards can have diverse functions and cater to various objectives. While they are typically associated with business intelligence, their specific purposes can vary depending on the service or team they cater to. Consequently, we can categorize BI dashboards into three fundamental types:</p>
+<ol>
+<li>Operational Dashboards</li>
+<li>Analytical Dashboards</li>
+<li>Strategic Dashboards</li>
+</ol>
+<p>Each of these types is designed in alignment with its primary tasks. When selecting the type of dashboard, it's crucial to consider the distinctions that impact both their functionalities and their design (Ratibor Sekirov, 2021).</p>
+<p><strong>8 Benefits of Data Dashboard</strong></p>
+<p>Utilized effectively, a dashboard offers numerous key advantages to organizations. These benefits encompass the ability to promptly observe, visualize, and take well-informed actions based on real-time metrics (<em>8 Business Benefits of BI Dashboards | Yellowfin BI</em>, 2022)..</p>
+<p>We've outlined the top 8 benefits in the following section.</p>
+<ol>
+<li><strong>Communicating Business Critical Information At-a-Glance</strong></li>
+</ol>
+<p>Data sources contain valuable insights about your business operations, but comprehending and analysing this data promptly can be challenging. BI dashboards offer a solution by providing quick and straightforward access to critical information essential for making informed decisions.</p>
+<p>Furthermore, a dashboard enables data visualization that simplifies information comprehension and facilitates swift comparisons across various aspects of your business. Visual representations like charts and graphs assist in identifying trends and patterns that might otherwise remain obscured when examining raw data (in the form of tables or numbers) alone.</p>
+<p>BI dashboards are effective tools for easily monitoring and analysing trends, sales data, and customer information. These capabilities contribute to better decision-making and operational enhancements.</p>
+<ol>
+<li><strong>Tracking and Executing on KPIs</strong></li>
+</ol>
+<p>Key performance indicators (KPIs) serve as crucial tools for monitoring your business's progress. BI dashboards offer a convenient means to effortlessly access and analyse data related to your KPI objectives. In fact, many organizations now specifically develop KPI dashboards for this very purpose.</p>
+<p>KPIs aid in the identification of areas where your business excels and areas that require improvement. Having this information readily accessible in a well-structured dashboard simplifies decision-making and enhances resource management.</p>
+<p>Furthermore, real-time updates of KPIs on a dashboard can be utilized to gauge the effectiveness of your marketing and sales efforts, eliminating the need for constant report refreshing.</p>
+<ol>
+<li><strong>Empowering Users With Better Accessibility to Information</strong></li>
+</ol>
+<p>Dashboards enhance users' comprehension of business data by simplifying the process of locating and accessing information. Real-time data visualizations enable users to discern patterns and trends that may have previously eluded their notice. This capability empowers employees to make more informed decisions and enhance their work efficiency.</p>
+<p>Moreover, users can leverage dashboards to oversee their own performance and track changes over time. This practice enables businesses to pinpoint areas in need of improvement and implement necessary changes.</p>
+<ol>
+<li><strong>Achieving True Data-Driven Decision-Making</strong></li>
+</ol>
+<p>A BI dashboard can swiftly reveal data patterns that might have eluded your notice in the past. This capability accelerates your decision-making process by enabling you to identify both challenges and opportunities at an earlier stage.</p>
+<p>Scanning for trends within your data aids in the identification of potential issues and opportunities, facilitating informed resource allocation decisions. It's worth noting that the extent to which a dashboard assists users in detecting patterns and correlations largely hinges on their utilization of advanced functionalities, such as automation.</p>
+<ol>
+<li><strong>Identifying Changes, Outliers and Trends Quicker</strong></li>
+</ol>
+<p>BI dashboards enable businesses to promptly detect changes and trends, enabling the timely identification of potential issues and the implementation of essential adjustments before they escalate into significant problems.</p>
+<p>Additionally, dashboards contribute to a holistic overview of the business, facilitating the recognition of outliers or anomalies. This, in turn, aids businesses in making informed decisions and achieving long-term cost savings.</p>
+<ol>
+<li><strong>Trusted, Verified Data Sharing</strong></li>
+</ol>
+<p>Utilizing dashboards can establish a reliable atmosphere for data sharing, thereby ensuring the accuracy and currency of all data.</p>
+<p>Furthermore, analytics can be applied to monitor the performance of individual departments, pinpointing areas in need of enhancement. This data can subsequently inform decision-making aimed at overall business performance improvement.</p>
+<ol>
+<li><strong>Intuitive Reporting and Analysis</strong></li>
+</ol>
+<p>Dashboards enable users to swiftly and effortlessly produce reports and analyses, simplifying the process for managers to obtain a rapid overview of the business data and arrive at well-informed decisions.</p>
+<p>Additionally, reports can be tailored to align with the precise requirements of the business, empowering managers to extract the maximum value from the data and enhance their decision-making. This customization feature also grants users the ability to craft dashboards tailored to their individual needs.</p>
+<ol>
+<li><strong>Increased Efficiency and Visibility of Business Processes</strong></li>
+</ol>
+<p>Interactive dashboards play a pivotal role in assisting businesses in the identification of areas requiring enhancement and the implementation of essential modifications. By gaining a comprehensive understanding of the business's holistic functioning, organizations can enhance their efficiency and elevate overall performance.</p>
+<p>When coupled with data storytelling (subject to the support provided by the BI solution for data stories), which combines narrative elements with data to elucidate the broader context and provide insights into the "what, when, why, and how" behind the data, businesses gain improved visibility into how alterations in one area influence others, the data's contextual significance, and the overall performance of the business</p>
+<p><strong>Key Components of Data Dashboard</strong></p>
+<p><strong>1. Customizable interface:</strong> A dashboard should be able to accommodate all your business intelligence requirements, but this may not always be achievable with off-the-shelf applications.</p>
+<p><strong>2. Interactive visualization:</strong> Data visualization greatly simplifies the task of spotting patterns, trends, and irregularities within any dataset, which proves particularly valuable when dealing with extensive data collections.</p>
+<p><strong>3. Data filters:</strong> Data filters represent a fundamental component of any effective data dashboard. These filters empower users to narrow down their focus on essential information by excluding certain portions of the available data.</p>
+<p><strong>4. Real-time updates :</strong> Nothing holds greater significance than data in real-time. Live data holds substantial value in tactical situations, significantly enhancing teams' ability to swiftly address anomalies as they surface.</p>
+<p><strong>5. Cross-device accessibility:</strong> Mobile devices are not exclusive to your customers; your teams also rely on them. In fact, your teams may use various devices for tasks such as logging into work or analysing data. This is where cross-device compatibility becomes invaluable.</p>
+<p><strong>6. Custom alerts functionality:</strong> Top-tier dashboards not only enhance decision-making and efficiency but also diminish the requirement for human involvement, except when essential. Continuous data monitoring is susceptible to human errors. Hence, organizations should entrust analytics to computers and lean on intelligent data alerts.</p>
+<p><strong>7. User accessibility management:</strong> Maintaining data security is of utmost significance when dealing with dashboards. However, security may be jeopardized when dashboard access is distributed among various teams and departments. This challenge can be mitigated through effective user accessibility management.</p>
+<p><strong>8. Data exporting and report generation</strong></p>
+<p>Certain dashboards, like high-level strategic ones, handle sensitive data that cannot be disseminated to other teams. Moreover, for sizable teams, sharing dashboards can pose risks to data security. This is where reporting can prove to be extremely valuable.</p>
+<p>Additionally, numerous dashboards provide supplementary functionalities that can be beneficial, including data drill-down, drill-through, embedding, language translation, and extra user interface elements to enhance customization even further (<em>8 Key Features to Include in Your Custom Data Dashboard</em>, 2022).</p>
+<p><strong>Designing Effective Data Dashboards</strong></p>
+<p>The application of design thinking to dashboards can pose challenges. Business Intelligence tools have made it incredibly convenient to generate visualizations and dashboards. The temptation to promptly construct multiple dashboards to assist people is strong. Nevertheless, without dedicating ample time to defining the issues, identifying stakeholders, specifying metrics, or prototyping ideal designs, these dashboards are likely to be ineffective. Embracing the Define and Prototyping stages is crucial for dashboard designers, as it results in dashboards that resonate with their audience and are better aligned with the decisions that audience needs to make (David, 2023).</p>
+<p>The design thinking process to dashboards:</p>
+<p><strong>Define ---&gt; Prototype ---&gt; Build ---&gt; Deploy</strong></p>
+<p><strong>Best Practices for Data Dashboard</strong></p>
+<p>The guidelines for constructing and utilizing dashboards can differ between organizations and individuals. It's crucial to keep your overarching objective for the dashboard and its intended audience in mind, while also considering these essential aspects for crafting an effective dashboard (<em>What Is a Dashboard? A Complete Overview</em>, 2023).</p>
+<ul>
+<li><strong>Key Performance Indicators (KPIs):</strong> Avoid inundating your audience with excessive data. Select only the most pertinent information and present it in a comprehensible manner.</li>
+<li><strong>Elements:</strong> Ensure the appropriate choice of charts, graphs, and tables for each dataset. The optimal visual representation enhances comprehension.</li>
+<li><strong>Design:</strong> Prioritize the clarity of your dashboard at first glance by structuring the data logically and maintaining a consistent colour scheme.</li>
+<li><strong>Labels:</strong> Exercise brevity and ensure clear labelling for all data elements.</li>
+<li><strong>Interactivity:</strong> Employ interactive elements when necessary. These features facilitate deeper data exploration or highlight variations within the data</li>
+</ul>
+<p><strong>Dashboard Design Pattern</strong></p>
+<p>There exist several overarching principles for creating dashboards, encompassing recommendations regarding visual perception, information simplification, the incorporation of interactive elements, and promoting visualization comprehension. However, our knowledge of truly effective and practical dashboard design, as well as how to facilitate swift dashboard creation, remains somewhat limited.</p>
+<p>It's worth acknowledging that designing dashboards is not a straightforward task. Designers are presented with a multitude of data sources that they can process, condense, or simplify according to their judgment. They also have access to a wide array of visual representations and the flexibility to structure and present these visualizations in various formats, taking advantage of the ample screen space available for viewing (as opposed to individual plots that prioritize space efficiency).</p>
+<p>The abundance of choices can be overwhelming, underscoring the pressing need for guidance on achieving effective dashboard design. This is particularly relevant as dashboards are increasingly created for a broader audience that may lack expertise in visualization or interface design, and by designers who may not have a background in these fields (<em>Dashboarddesignpatterns.github.io</em>, 2022).</p>
+<p><strong>Data Dashboard Tools and Techniques</strong></p>
+<p>There are many different software tools available for data dashboarding. Some of the most popular tools include:</p>
+<ul>
+<li><strong>Microsoft Power BI:</strong> Power BI is a cloud-based business intelligence (BI) platform that allows users to create interactive dashboards and reports. It has a wide range of features, including data visualization, data analysis, and collaboration tools.</li>
+<li><strong>Tableau:</strong> Tableau is another popular BI platform that is known for its powerful data visualization capabilities. It offers a wide range of pre-built templates and visualizations, as well as the ability to create custom dashboards. Tableau software dashboard tool.</li>
+<li><strong>Qlik Sense:</strong> Qlik Sense is a BI platform that is known for its ability to handle large datasets. It offers a variety of features, including data visualization, data analysis, and machine learning.</li>
+<li><strong>Google Data Studio:</strong> Google Data Studio is a free BI tool that is easy to use and can be used to create interactive dashboards and reports. It integrates with a variety of data sources, including Google Analytics, Google Sheets, and BigQuery.</li>
+<li><strong>Klipfolio:</strong> Klipfolio is a cloud-based dashboarding tool that is known for its flexibility and customization capabilities. It offers a variety of pre-built templates and visualizations, as well as the ability to create custom dashboards.</li>
+</ul>
+<p>These are just a few of the many different software tools available for data dashboarding. The best tool for you will depend on your specific needs and requirements (Yen, 2023).</p>
+<p>When choosing a data dashboarding tool, it is important to consider the following factors:</p>
+<ul>
+<li><strong>Your budget:</strong> Data dashboarding tools can range in price from free to thousands of dollars per month.</li>
+<li><strong>Your data sources:</strong> The tool should be able to connect to the data sources that you use.</li>
+<li><strong>Your technical skills:</strong> Some tools are more user-friendly than others.</li>
+<li><strong>Your desired features:</strong> Consider the features that are important to you, such as data visualization, data analysis, and collaboration tools.</li>
+<li><strong>Your business's needs:</strong> The tool should be easy for your team to use and understand.</li>
+</ul>
+<p>By considering these factors, you can choose the data dashboarding tool that is right for you.</p>
+<p><strong>Reference List</strong></p>
+<p>Yellowfin Team. (2022). <em>8 Business Benefits of BI Dashboards | Yellowfin BI.</em> <a href="https://www.yellowfinbi.com/blog/bi-dashboards-business-benefits">https://www.yellowfinbi.com/blog/bi-dashboards-business-benefits</a>.</p>
+<p>Successive Digital. (2022). <em>8 Key Features to Include in Your Custom Data Dashboard.</em> <a href="https://successive.tech/blog/8-key-features-to-include-in-your-custom-data-dashboard/">https://successive.tech/blog/8-key-features-to-include-in-your-custom-data-dashboard/</a>.</p>
+<p><em>Benjamin Bach. (2022). Dashboard Design Patterns. Dashboarddesignpatterns.</em></p>
+<p> <a href="https://dashboarddesignpatterns.github.io/"><em>https://dashboarddesignpatterns.github.io/</em></a><em>.</em></p>
+<p>David, M. (2023). <em>Introduction to Designing Dashboards</em>. The Data School; The Data School. <a href="https://dataschool.com/how-to-design-a-dashboard/introduction/">https://dataschool.com/how-to-design-a-dashboard/introduction/</a></p>
+<p>Manning, Arden. 2016. Workplace Automation: Making Data Visualization Smarter. Yseop.  <a href="https://yseop.com/blog/automation-making-data-visualization-smarter/">https://yseop.com/blog/automation-making-data-visualization-smarter/</a></p>
+<p>Ratibor Sekirov. (2021, October). <em>10 Data Dashboard Design Best Practices [Trends for 2022] | Aspirity</em>. Aspirity.com; Aspirity Inc. <a href="https://aspirity.com/blog/dashboard-design-overview">https://aspirity.com/blog/dashboard-design-overview</a></p>
+<p>Tableau. (2023). <em>What is a dashboard? A complete overview | Tableau.</em> <a href="https://www.tableau.com/learn/articles/dashboards/what-is">https://www.tableau.com/learn/articles/dashboards/what-is</a>.</p>
+<p>Yen, Leon. (2023, August 22). <em>10 Best Dashboard Software Solutions of 2023</em>. Datamation. <a href="https://www.datamation.com/big-data/best-dashboard-software/">https://www.datamation.com/big-data/best-dashboard-software/</a></p>
+<p>‌</p></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../03_Data_Visualization/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Visualization">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Data Visualization
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../05_Data_Mining_Techniques/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Mining Techniques">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Data Mining Techniques
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      This documentation is hosted by <a href="https://ansis.com.sg/">ANSIS Pte Ltd</a>
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "navigation.footer", "navigation.instant", "navigation.tabs", "navigation.tracking", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "navigation.path", "tabs"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+        <script src="../../javascripts/atom.js"></script>
+      
+        <script src="../../javascripts/misc.js"></script>
+      
+    
+  </body>
+</html>
