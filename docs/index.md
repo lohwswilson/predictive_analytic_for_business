@@ -1,5 +1,54 @@
+---
+title: Applied Analytics for Business
+no_toc: true
+hide:
+  - navigation
+  - toc
+---
 # Applied Analytics for Business
 
-The basic of business analytics
-Business analytics is a field that utilizes a variety of techniques and tools to convert unprocessed data into valuable insights for businesses. This data can come from diverse sources, including standard spreadsheets and conventional databases, along with social media platforms such as Twitter and Facebook. To achieve these insights, a spectrum of methods like statistical models and machine learning is employed. The primary objective of business analytics is to derive significant conclusions that aid in well-informed choices and play a role in an organization's achievements.
-Each day, employees, supply chains, marketing endeavours, finance teams, and various other aspects of every business contribute to this wealth of data. Big data encompasses vast volumes of data originating from diverse sources and taking various forms. Many organizations have come to realize the benefits of amassing extensive data stores. However, the mere collection and storage of big data are insufficient; it's imperative to harness its potential. Thanks to the rapid advancement of technology, organizations can utilize business analytics to convert terabytes of data into actionable insights (Big Data Analytics: What It Is, How It Works, Benefits, and Challenges, 2023).
+<script src="https://cdn.tailwindcss.com"></script>
+
+<div class="grid cards" markdown>
+
+-   :material-application:{ .lg .middle } __Business Applications__
+
+    ---
+
+    Making better decision with Integrated Business Applications [[01_application_guide]]
+
+    [:octicons-arrow-right-24: Getting started](#)
+
+-   :material-robot-industrial:{ .lg .middle } __Industrial Solutions__
+
+    ---
+
+    Focus on your content and generate a responsive and searchable static site
+
+    [:octicons-arrow-right-24: Reference](#)
+
+-   :material-robot:{ .lg .middle } __AI Solutions__
+
+    ---
+
+    Change the colors, fonts, language, icons, logo and more with a few lines
+
+    [:octicons-arrow-right-24: Customization](#)
+
+-   :material-home-analytics:{ .lg .middle } __Business Analytics__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License](#)
+
+-   :material-github:{ .lg .middle } __Developer Guides__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License](#)
+
+</div>

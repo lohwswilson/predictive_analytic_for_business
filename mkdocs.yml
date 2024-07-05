@@ -62,20 +62,12 @@ extra:
     actions:
       - accept
       - manage
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-    feedback:
-      - icon: material/emoticon-happy-outline
-        name: This page was helpful
-        data: 1
-      - icon: material/emoticon-sad-outline
-        name: This page could be improved
-        data: 0
   generator: false
 
 plugins:
+  - social
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
 copyright: This documentation is hosted by <a href="https://ansis.com.sg/">ANSIS Pte Ltd</a>
 site_author: ANSIS
