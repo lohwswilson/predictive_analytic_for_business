@@ -13,7 +13,7 @@ theme:
   # logo: assets/pw_logo.png
   # favicon: assets/pw_logo.png
   font:
-    text: Roboto
+    text: Noto Sans Adlam Unjoined 
   navigation_depth: 5
   highlightjs: true
   hljs_languages:
@@ -27,7 +27,7 @@ theme:
     - navigation.footer
     - navigation.instant
     - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs.sticky
     - navigation.tracking
     - navigation.indexes
     - search.highlight
@@ -64,8 +64,60 @@ extra:
       - manage
   generator: false
 
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/output.css
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/atom.js
+  - javascripts/misc.js
+
+  
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
 plugins:
   - social
+  - mkdocs-video
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 

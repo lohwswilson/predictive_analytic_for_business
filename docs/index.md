@@ -1,54 +1,11 @@
 ---
-title: Applied Analytics for Business
-no_toc: true
+title: Module Information
 hide:
   - navigation
   - toc
 ---
-# Applied Analytics for Business
-
 <script src="https://cdn.tailwindcss.com"></script>
 
-<div class="grid cards" markdown>
-
--   :material-application:{ .lg .middle } __Business Applications__
-
-    ---
-
-    Making better decision with Integrated Business Applications [[01_application_guide]]
-
-    [:octicons-arrow-right-24: Getting started](#)
-
--   :material-robot-industrial:{ .lg .middle } __Industrial Solutions__
-
-    ---
-
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-robot:{ .lg .middle } __AI Solutions__
-
-    ---
-
-    Change the colors, fonts, language, icons, logo and more with a few lines
-
-    [:octicons-arrow-right-24: Customization](#)
-
--   :material-home-analytics:{ .lg .middle } __Business Analytics__
-
-    ---
-
-    Material for MkDocs is licensed under MIT and available on [GitHub]
-
-    [:octicons-arrow-right-24: License](#)
-
--   :material-github:{ .lg .middle } __Developer Guides__
-
-    ---
-
-    Material for MkDocs is licensed under MIT and available on [GitHub]
-
-    [:octicons-arrow-right-24: License](#)
-
+<div class="container px-5 py-1 mx-auto flex flex-wrap">
+  <h1 class="text-l text-gray-700 font-medium">Applied Analytics for Business</h1>
 </div>
