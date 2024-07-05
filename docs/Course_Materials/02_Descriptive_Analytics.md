@@ -1,5 +1,7 @@
 ---
 title: Descriptve Analytics
+author: [Wilson Loh]
+date: 2022-05-01
 ---
 
 ## Introduction to descriptive analytics and its role in data analysis

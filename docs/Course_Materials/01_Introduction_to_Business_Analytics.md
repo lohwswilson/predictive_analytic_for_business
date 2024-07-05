@@ -1,5 +1,7 @@
 ---
 title: Introduction to Business Analytics
+author: [Wilson Loh]
+date: 2022-05-01
 ---
 
 ## The Basic of Business Analytics

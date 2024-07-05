@@ -116,10 +116,10 @@ markdown_extensions:
   - pymdownx.tilde
 
 plugins:
-  - social
+  - glightbox
   - mkdocs-video
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-
+  - social
 copyright: This documentation is hosted by <a href="https://ansis.com.sg/">ANSIS Pte Ltd</a>
 site_author: ANSIS
