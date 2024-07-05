@@ -85,7 +85,16 @@
       
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -102,6 +111,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-data-dashboarding" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -512,6 +526,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Data Dashboarding
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -521,6 +546,191 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-data-dashboarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Data Dashboarding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-dashboards-vs-data-visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Dashboards vs Data Visualizations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-basic-types-of-data-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 Basic Types of Data Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-benefits-of-data-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 Benefits of Data Dashboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 Benefits of Data Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communicating-business-critical-information-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communicating Business Critical Information At-a-Glance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking-and-executing-on-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking and Executing on KPIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empowering-users-with-better-accessibility-to-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empowering Users With Better Accessibility to Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#achieving-true-data-driven-decision-making" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieving True Data-Driven Decision-Making
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifying-changes-outliers-and-trends-quicker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying Changes, Outliers and Trends Quicker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trusted-verified-data-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trusted, Verified Data Sharing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intuitive-reporting-and-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intuitive Reporting and Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#increased-efficiency-and-visibility-of-business-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increased Efficiency and Visibility of Business Processes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-components-of-data-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Components of Data Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#designing-effective-data-dashboards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designing Effective Data Dashboards
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices-for-data-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices for Data Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-design-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard Design Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-dashboard-tools-and-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Dashboard Tools and Techniques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference List
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -629,6 +839,182 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-data-dashboarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Data Dashboarding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-dashboards-vs-data-visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Dashboards vs Data Visualizations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-basic-types-of-data-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 Basic Types of Data Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-benefits-of-data-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 Benefits of Data Dashboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 Benefits of Data Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communicating-business-critical-information-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communicating Business Critical Information At-a-Glance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking-and-executing-on-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking and Executing on KPIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empowering-users-with-better-accessibility-to-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empowering Users With Better Accessibility to Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#achieving-true-data-driven-decision-making" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieving True Data-Driven Decision-Making
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifying-changes-outliers-and-trends-quicker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying Changes, Outliers and Trends Quicker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trusted-verified-data-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trusted, Verified Data Sharing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intuitive-reporting-and-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intuitive Reporting and Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#increased-efficiency-and-visibility-of-business-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increased Efficiency and Visibility of Business Processes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-components-of-data-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Components of Data Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#designing-effective-data-dashboards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designing Effective Data Dashboards
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices-for-data-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices for Data Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-design-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard Design Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-dashboard-tools-and-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Dashboard Tools and Techniques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference List
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -647,94 +1033,111 @@
 
   <h1>Data Dashboarding</h1>
 
-<div><p><strong>Module: Applied Analytics for Business and Finance</strong></p>
-<p><strong>Topic 4: Data Dashboarding</strong></p>
-<p>How do individuals arrive at decisions without consulting data? They rely on their past experiences and their comprehension of a given situation. Historically, this approach was necessary due to the difficulty in obtaining and comprehending data. However, the landscape of data accessibility has transformed significantly:</p>
-<ol>
+<div><p>How do individuals arrive at decisions without consulting data? They rely on their past experiences and their comprehension of a given situation. Historically, this approach was necessary due to the difficulty in obtaining and comprehending data. However, the landscape of data accessibility has transformed significantly:</p>
+<ul>
 <li>We now have the capability to acquire data from every facet of our business.</li>
 <li>Data storage has become cost-effective, allowing us to amass substantial volumes of data.</li>
 <li>A plethora of tools exists to effortlessly extract, transform, and visualize data.</li>
-</ol>
+</ul>
 <p>While dashboards cannot alter an individual's past experiences, they can serve as a means to surface data, enhancing one's understanding of a situation and aiding in better decision-making. Dashboards function as a bridge connecting data-oriented individuals (such as yourself) with business professionals (David, 2023).</p>
-<p><strong>Introduction to data dashboarding</strong></p>
+<h2 id="introduction-to-data-dashboarding">Introduction to Data Dashboarding<a class="headerlink" href="#introduction-to-data-dashboarding" title="Permanent link">¶</a></h2>
 <p>Data analysis software can process vast volumes of data at impressive speeds, but there is a challenge when it comes to explaining the outcomes of this analysis. Currently, the primary method for accomplishing this is through visual representations. However, there is still room for interpretation in data visualization. Fortunately, technology is advancing in this regard. Narrative generation software can be integrated as a plugin into dashboards (Manning 2016).Top of Form</p>
-<p>Whenever there's a need to present information for the purpose of enhancing decision-making, the concept of designing a dashboard should be considered. A well-crafted dashboard serves as a platform to arrange multiple data visualizations, ensuring the provision of sufficient context for making well-informed decisions.</p>
-<p>For instance, take a look at this user data dashboard, designed as an illustrative example. This dashboard is designed to monitor key metrics for a SaaS (Software as a Service) company. It offers an immediate overview of essential data, including revenue, operational expenses, total user counts, and other pertinent information that can be assessed.</p>
-<p>Such a dashboard can be invaluable to the CEO or anyone within the organization, offering a high-level snapshot of the current situation and assisting in determining where to focus their attention. "<em>For instance, my operational expenses surpass my revenue; I should reach out to my COO to gain insights into our excessive spending</em>."</p>
-<p>This dashboard comprises various data visualizations, presenting viewers with the necessary context to glean insights and make informed decisions. An effective dashboard is also dynamic, adapting to changes in the underlying data automatically. This ensures that time-sensitive insights and decisions can be promptly addressed.</p>
-<p><strong>Data Dashboards vs Data Visualizations</strong></p>
+<p><br>
+Whenever there's a need to present information for the purpose of enhancing decision-making, the concept of designing a dashboard should be considered. A well-crafted dashboard serves as a platform to arrange multiple data visualizations, ensuring the provision of sufficient context for making well-informed decisions.</p>
+<p><br>
+For instance, take a look at this user data dashboard, designed as an illustrative example. This dashboard is designed to monitor key metrics for a SaaS (Software as a Service) company. It offers an immediate overview of essential data, including revenue, operational expenses, total user counts, and other pertinent information that can be assessed.</p>
+<p><br>
+Such a dashboard can be invaluable to the CEO or anyone within the organization, offering a high-level snapshot of the current situation and assisting in determining where to focus their attention. "<em>For instance, my operational expenses surpass my revenue; I should reach out to my COO to gain insights into our excessive spending</em>."</p>
+<p><br>
+This dashboard comprises various data visualizations, presenting viewers with the necessary context to glean insights and make informed decisions. An effective dashboard is also dynamic, adapting to changes in the underlying data automatically. This ensures that time-sensitive insights and decisions can be promptly addressed.</p>
+<h2 id="data-dashboards-vs-data-visualizations">Data Dashboards vs Data Visualizations<a class="headerlink" href="#data-dashboards-vs-data-visualizations" title="Permanent link">¶</a></h2>
 <p>Two common terms when it comes to analytics and reporting are “data dashboard” and “data visualization.” What’s the difference?</p>
-<p><strong>Data visualization</strong> involves the presentation of data in a visual format, aiming to enhance its comprehensibility and analysability.</p>
-<p><strong>Data dashboards</strong> serve as consolidated summaries of distinct yet interrelated data sets, presented in a manner that simplifies the comprehension of their interconnected information. Dashboards essentially fall under the category of data visualizations and commonly employ familiar visualization tools like graphs, charts, and tables.</p>
-<p><strong>3 Basic types of data dashboard</strong></p>
+<p><br></p>
+<ul>
+<li><strong>Data visualization</strong> involves the presentation of data in a visual format, aiming to enhance its comprehensibility and analysability.</li>
+<li><strong>Data dashboards</strong> serve as consolidated summaries of distinct yet interrelated data sets, presented in a manner that simplifies the comprehension of their interconnected information. Dashboards essentially fall under the category of data visualizations and commonly employ familiar visualization tools like graphs, charts, and tables.</li>
+</ul>
+<h2 id="3-basic-types-of-data-dashboard">3 Basic Types of Data Dashboard<a class="headerlink" href="#3-basic-types-of-data-dashboard" title="Permanent link">¶</a></h2>
 <p>Data dashboards can have diverse functions and cater to various objectives. While they are typically associated with business intelligence, their specific purposes can vary depending on the service or team they cater to. Consequently, we can categorize BI dashboards into three fundamental types:</p>
-<ol>
+<ul>
 <li>Operational Dashboards</li>
 <li>Analytical Dashboards</li>
 <li>Strategic Dashboards</li>
-</ol>
-<p>Each of these types is designed in alignment with its primary tasks. When selecting the type of dashboard, it's crucial to consider the distinctions that impact both their functionalities and their design (Ratibor Sekirov, 2021).</p>
-<p><strong>8 Benefits of Data Dashboard</strong></p>
+</ul>
+<p>Each of these types is designed in alignment with its primary tasks. When selecting the type of dashboard, it's crucial to consider the distinctions that impact both their functionalities and their design (<em>Ratibor Sekirov, 2021</em>).</p>
+<h2 id="8-benefits-of-data-dashboard">8 Benefits of Data Dashboard<a class="headerlink" href="#8-benefits-of-data-dashboard" title="Permanent link">¶</a></h2>
 <p>Utilized effectively, a dashboard offers numerous key advantages to organizations. These benefits encompass the ability to promptly observe, visualize, and take well-informed actions based on real-time metrics (<em>8 Business Benefits of BI Dashboards | Yellowfin BI</em>, 2022)..</p>
-<p>We've outlined the top 8 benefits in the following section.</p>
-<ol>
-<li><strong>Communicating Business Critical Information At-a-Glance</strong></li>
-</ol>
+<p><br>
+We've outlined the top 8 benefits in the following section.</p>
+<h3 id="communicating-business-critical-information-at-a-glance">Communicating Business Critical Information At-a-Glance<a class="headerlink" href="#communicating-business-critical-information-at-a-glance" title="Permanent link">¶</a></h3>
 <p>Data sources contain valuable insights about your business operations, but comprehending and analysing this data promptly can be challenging. BI dashboards offer a solution by providing quick and straightforward access to critical information essential for making informed decisions.</p>
-<p>Furthermore, a dashboard enables data visualization that simplifies information comprehension and facilitates swift comparisons across various aspects of your business. Visual representations like charts and graphs assist in identifying trends and patterns that might otherwise remain obscured when examining raw data (in the form of tables or numbers) alone.</p>
-<p>BI dashboards are effective tools for easily monitoring and analysing trends, sales data, and customer information. These capabilities contribute to better decision-making and operational enhancements.</p>
-<ol>
-<li><strong>Tracking and Executing on KPIs</strong></li>
-</ol>
+<p><br>
+Furthermore, a dashboard enables data visualization that simplifies information comprehension and facilitates swift comparisons across various aspects of your business. Visual representations like charts and graphs assist in identifying trends and patterns that might otherwise remain obscured when examining raw data (in the form of tables or numbers) alone.</p>
+<p><br>
+BI dashboards are effective tools for easily monitoring and analysing trends, sales data, and customer information. These capabilities contribute to better decision-making and operational enhancements.</p>
+<h3 id="tracking-and-executing-on-kpis">Tracking and Executing on KPIs<a class="headerlink" href="#tracking-and-executing-on-kpis" title="Permanent link">¶</a></h3>
 <p>Key performance indicators (KPIs) serve as crucial tools for monitoring your business's progress. BI dashboards offer a convenient means to effortlessly access and analyse data related to your KPI objectives. In fact, many organizations now specifically develop KPI dashboards for this very purpose.</p>
-<p>KPIs aid in the identification of areas where your business excels and areas that require improvement. Having this information readily accessible in a well-structured dashboard simplifies decision-making and enhances resource management.</p>
-<p>Furthermore, real-time updates of KPIs on a dashboard can be utilized to gauge the effectiveness of your marketing and sales efforts, eliminating the need for constant report refreshing.</p>
-<ol>
-<li><strong>Empowering Users With Better Accessibility to Information</strong></li>
-</ol>
+<p><br>
+KPIs aid in the identification of areas where your business excels and areas that require improvement. Having this information readily accessible in a well-structured dashboard simplifies decision-making and enhances resource management.</p>
+<p><br>
+Furthermore, real-time updates of KPIs on a dashboard can be utilized to gauge the effectiveness of your marketing and sales efforts, eliminating the need for constant report refreshing.</p>
+<h3 id="empowering-users-with-better-accessibility-to-information">Empowering Users With Better Accessibility to Information<a class="headerlink" href="#empowering-users-with-better-accessibility-to-information" title="Permanent link">¶</a></h3>
 <p>Dashboards enhance users' comprehension of business data by simplifying the process of locating and accessing information. Real-time data visualizations enable users to discern patterns and trends that may have previously eluded their notice. This capability empowers employees to make more informed decisions and enhance their work efficiency.</p>
-<p>Moreover, users can leverage dashboards to oversee their own performance and track changes over time. This practice enables businesses to pinpoint areas in need of improvement and implement necessary changes.</p>
-<ol>
-<li><strong>Achieving True Data-Driven Decision-Making</strong></li>
-</ol>
+<p><br>
+Moreover, users can leverage dashboards to oversee their own performance and track changes over time. This practice enables businesses to pinpoint areas in need of improvement and implement necessary changes.</p>
+<h3 id="achieving-true-data-driven-decision-making">Achieving True Data-Driven Decision-Making<a class="headerlink" href="#achieving-true-data-driven-decision-making" title="Permanent link">¶</a></h3>
 <p>A BI dashboard can swiftly reveal data patterns that might have eluded your notice in the past. This capability accelerates your decision-making process by enabling you to identify both challenges and opportunities at an earlier stage.</p>
-<p>Scanning for trends within your data aids in the identification of potential issues and opportunities, facilitating informed resource allocation decisions. It's worth noting that the extent to which a dashboard assists users in detecting patterns and correlations largely hinges on their utilization of advanced functionalities, such as automation.</p>
-<ol>
-<li><strong>Identifying Changes, Outliers and Trends Quicker</strong></li>
-</ol>
+<p><br>
+Scanning for trends within your data aids in the identification of potential issues and opportunities, facilitating informed resource allocation decisions. It's worth noting that the extent to which a dashboard assists users in detecting patterns and correlations largely hinges on their utilization of advanced functionalities, such as automation.</p>
+<h3 id="identifying-changes-outliers-and-trends-quicker">Identifying Changes, Outliers and Trends Quicker<a class="headerlink" href="#identifying-changes-outliers-and-trends-quicker" title="Permanent link">¶</a></h3>
 <p>BI dashboards enable businesses to promptly detect changes and trends, enabling the timely identification of potential issues and the implementation of essential adjustments before they escalate into significant problems.</p>
-<p>Additionally, dashboards contribute to a holistic overview of the business, facilitating the recognition of outliers or anomalies. This, in turn, aids businesses in making informed decisions and achieving long-term cost savings.</p>
-<ol>
-<li><strong>Trusted, Verified Data Sharing</strong></li>
-</ol>
+<p><br>
+Additionally, dashboards contribute to a holistic overview of the business, facilitating the recognition of outliers or anomalies. This, in turn, aids businesses in making informed decisions and achieving long-term cost savings.</p>
+<h3 id="trusted-verified-data-sharing">Trusted, Verified Data Sharing<a class="headerlink" href="#trusted-verified-data-sharing" title="Permanent link">¶</a></h3>
 <p>Utilizing dashboards can establish a reliable atmosphere for data sharing, thereby ensuring the accuracy and currency of all data.</p>
-<p>Furthermore, analytics can be applied to monitor the performance of individual departments, pinpointing areas in need of enhancement. This data can subsequently inform decision-making aimed at overall business performance improvement.</p>
-<ol>
-<li><strong>Intuitive Reporting and Analysis</strong></li>
-</ol>
+<p><br>
+Furthermore, analytics can be applied to monitor the performance of individual departments, pinpointing areas in need of enhancement. This data can subsequently inform decision-making aimed at overall business performance improvement.</p>
+<h3 id="intuitive-reporting-and-analysis">Intuitive Reporting and Analysis<a class="headerlink" href="#intuitive-reporting-and-analysis" title="Permanent link">¶</a></h3>
 <p>Dashboards enable users to swiftly and effortlessly produce reports and analyses, simplifying the process for managers to obtain a rapid overview of the business data and arrive at well-informed decisions.</p>
-<p>Additionally, reports can be tailored to align with the precise requirements of the business, empowering managers to extract the maximum value from the data and enhance their decision-making. This customization feature also grants users the ability to craft dashboards tailored to their individual needs.</p>
-<ol>
-<li><strong>Increased Efficiency and Visibility of Business Processes</strong></li>
-</ol>
+<p><br>
+Additionally, reports can be tailored to align with the precise requirements of the business, empowering managers to extract the maximum value from the data and enhance their decision-making. This customization feature also grants users the ability to craft dashboards tailored to their individual needs.</p>
+<h3 id="increased-efficiency-and-visibility-of-business-processes">Increased Efficiency and Visibility of Business Processes<a class="headerlink" href="#increased-efficiency-and-visibility-of-business-processes" title="Permanent link">¶</a></h3>
 <p>Interactive dashboards play a pivotal role in assisting businesses in the identification of areas requiring enhancement and the implementation of essential modifications. By gaining a comprehensive understanding of the business's holistic functioning, organizations can enhance their efficiency and elevate overall performance.</p>
 <p>When coupled with data storytelling (subject to the support provided by the BI solution for data stories), which combines narrative elements with data to elucidate the broader context and provide insights into the "what, when, why, and how" behind the data, businesses gain improved visibility into how alterations in one area influence others, the data's contextual significance, and the overall performance of the business</p>
-<p><strong>Key Components of Data Dashboard</strong></p>
-<p><strong>1. Customizable interface:</strong> A dashboard should be able to accommodate all your business intelligence requirements, but this may not always be achievable with off-the-shelf applications.</p>
-<p><strong>2. Interactive visualization:</strong> Data visualization greatly simplifies the task of spotting patterns, trends, and irregularities within any dataset, which proves particularly valuable when dealing with extensive data collections.</p>
-<p><strong>3. Data filters:</strong> Data filters represent a fundamental component of any effective data dashboard. These filters empower users to narrow down their focus on essential information by excluding certain portions of the available data.</p>
-<p><strong>4. Real-time updates :</strong> Nothing holds greater significance than data in real-time. Live data holds substantial value in tactical situations, significantly enhancing teams' ability to swiftly address anomalies as they surface.</p>
-<p><strong>5. Cross-device accessibility:</strong> Mobile devices are not exclusive to your customers; your teams also rely on them. In fact, your teams may use various devices for tasks such as logging into work or analysing data. This is where cross-device compatibility becomes invaluable.</p>
-<p><strong>6. Custom alerts functionality:</strong> Top-tier dashboards not only enhance decision-making and efficiency but also diminish the requirement for human involvement, except when essential. Continuous data monitoring is susceptible to human errors. Hence, organizations should entrust analytics to computers and lean on intelligent data alerts.</p>
-<p><strong>7. User accessibility management:</strong> Maintaining data security is of utmost significance when dealing with dashboards. However, security may be jeopardized when dashboard access is distributed among various teams and departments. This challenge can be mitigated through effective user accessibility management.</p>
-<p><strong>8. Data exporting and report generation</strong></p>
-<p>Certain dashboards, like high-level strategic ones, handle sensitive data that cannot be disseminated to other teams. Moreover, for sizable teams, sharing dashboards can pose risks to data security. This is where reporting can prove to be extremely valuable.</p>
-<p>Additionally, numerous dashboards provide supplementary functionalities that can be beneficial, including data drill-down, drill-through, embedding, language translation, and extra user interface elements to enhance customization even further (<em>8 Key Features to Include in Your Custom Data Dashboard</em>, 2022).</p>
-<p><strong>Designing Effective Data Dashboards</strong></p>
+<h2 id="key-components-of-data-dashboard">Key Components of Data Dashboard<a class="headerlink" href="#key-components-of-data-dashboard" title="Permanent link">¶</a></h2>
+<ul>
+<li>
+<p><strong>Customizable interface:</strong> A dashboard should be able to accommodate all your business intelligence requirements, but this may not always be achievable with off-the-shelf applications.</p>
+</li>
+<li>
+<p><strong>Interactive visualization:</strong> Data visualization greatly simplifies the task of spotting patterns, trends, and irregularities within any dataset, which proves particularly valuable when dealing with extensive data collections.</p>
+</li>
+<li>
+<p><strong>Data filters:</strong> Data filters represent a fundamental component of any effective data dashboard. These filters empower users to narrow down their focus on essential information by excluding certain portions of the available data.</p>
+</li>
+<li>
+<p><strong>Real-time updates :</strong> Nothing holds greater significance than data in real-time. Live data holds substantial value in tactical situations, significantly enhancing teams' ability to swiftly address anomalies as they surface.</p>
+</li>
+<li>
+<p><strong>Cross-device accessibility:</strong> Mobile devices are not exclusive to your customers; your teams also rely on them. In fact, your teams may use various devices for tasks such as logging into work or analysing data. This is where cross-device compatibility becomes invaluable.</p>
+</li>
+<li>
+<p><strong>Custom alerts functionality:</strong> Top-tier dashboards not only enhance decision-making and efficiency but also diminish the requirement for human involvement, except when essential. Continuous data monitoring is susceptible to human errors. Hence, organizations should entrust analytics to computers and lean on intelligent data alerts.</p>
+</li>
+<li>
+<p><strong>User accessibility management:</strong> Maintaining data security is of utmost significance when dealing with dashboards. However, security may be jeopardized when dashboard access is distributed among various teams and departments. This challenge can be mitigated through effective user accessibility management.</p>
+</li>
+<li>
+<p><strong>Data exporting and report generation:</strong> Certain dashboards, like high-level strategic ones, handle sensitive data that cannot be disseminated to other teams. Moreover, for sizable teams, sharing dashboards can pose risks to data security. This is where reporting can prove to be extremely valuable.</p>
+</li>
+</ul>
+<p><br>
+Additionally, numerous dashboards provide supplementary functionalities that can be beneficial, including data drill-down, drill-through, embedding, language translation, and extra user interface elements to enhance customization even further (<em>8 Key Features to Include in Your Custom Data Dashboard</em>, 2022).</p>
+<h2 id="designing-effective-data-dashboards">Designing Effective Data Dashboards<a class="headerlink" href="#designing-effective-data-dashboards" title="Permanent link">¶</a></h2>
 <p>The application of design thinking to dashboards can pose challenges. Business Intelligence tools have made it incredibly convenient to generate visualizations and dashboards. The temptation to promptly construct multiple dashboards to assist people is strong. Nevertheless, without dedicating ample time to defining the issues, identifying stakeholders, specifying metrics, or prototyping ideal designs, these dashboards are likely to be ineffective. Embracing the Define and Prototyping stages is crucial for dashboard designers, as it results in dashboards that resonate with their audience and are better aligned with the decisions that audience needs to make (David, 2023).</p>
 <p>The design thinking process to dashboards:</p>
 <p><strong>Define ---&gt; Prototype ---&gt; Build ---&gt; Deploy</strong></p>
-<p><strong>Best Practices for Data Dashboard</strong></p>
+<h2 id="best-practices-for-data-dashboard">Best Practices for Data Dashboard<a class="headerlink" href="#best-practices-for-data-dashboard" title="Permanent link">¶</a></h2>
 <p>The guidelines for constructing and utilizing dashboards can differ between organizations and individuals. It's crucial to keep your overarching objective for the dashboard and its intended audience in mind, while also considering these essential aspects for crafting an effective dashboard (<em>What Is a Dashboard? A Complete Overview</em>, 2023).</p>
 <ul>
 <li><strong>Key Performance Indicators (KPIs):</strong> Avoid inundating your audience with excessive data. Select only the most pertinent information and present it in a comprehensible manner.</li>
@@ -743,11 +1146,13 @@
 <li><strong>Labels:</strong> Exercise brevity and ensure clear labelling for all data elements.</li>
 <li><strong>Interactivity:</strong> Employ interactive elements when necessary. These features facilitate deeper data exploration or highlight variations within the data</li>
 </ul>
-<p><strong>Dashboard Design Pattern</strong></p>
+<h2 id="dashboard-design-pattern">Dashboard Design Pattern<a class="headerlink" href="#dashboard-design-pattern" title="Permanent link">¶</a></h2>
 <p>There exist several overarching principles for creating dashboards, encompassing recommendations regarding visual perception, information simplification, the incorporation of interactive elements, and promoting visualization comprehension. However, our knowledge of truly effective and practical dashboard design, as well as how to facilitate swift dashboard creation, remains somewhat limited.</p>
-<p>It's worth acknowledging that designing dashboards is not a straightforward task. Designers are presented with a multitude of data sources that they can process, condense, or simplify according to their judgment. They also have access to a wide array of visual representations and the flexibility to structure and present these visualizations in various formats, taking advantage of the ample screen space available for viewing (as opposed to individual plots that prioritize space efficiency).</p>
-<p>The abundance of choices can be overwhelming, underscoring the pressing need for guidance on achieving effective dashboard design. This is particularly relevant as dashboards are increasingly created for a broader audience that may lack expertise in visualization or interface design, and by designers who may not have a background in these fields (<em>Dashboarddesignpatterns.github.io</em>, 2022).</p>
-<p><strong>Data Dashboard Tools and Techniques</strong></p>
+<p><br>
+It's worth acknowledging that designing dashboards is not a straightforward task. Designers are presented with a multitude of data sources that they can process, condense, or simplify according to their judgment. They also have access to a wide array of visual representations and the flexibility to structure and present these visualizations in various formats, taking advantage of the ample screen space available for viewing (as opposed to individual plots that prioritize space efficiency).</p>
+<p><br>
+The abundance of choices can be overwhelming, underscoring the pressing need for guidance on achieving effective dashboard design. This is particularly relevant as dashboards are increasingly created for a broader audience that may lack expertise in visualization or interface design, and by designers who may not have a background in these fields (<em>Dashboarddesignpatterns.github.io</em>, 2022).</p>
+<h2 id="data-dashboard-tools-and-techniques">Data Dashboard Tools and Techniques<a class="headerlink" href="#data-dashboard-tools-and-techniques" title="Permanent link">¶</a></h2>
 <p>There are many different software tools available for data dashboarding. Some of the most popular tools include:</p>
 <ul>
 <li><strong>Microsoft Power BI:</strong> Power BI is a cloud-based business intelligence (BI) platform that allows users to create interactive dashboards and reports. It has a wide range of features, including data visualization, data analysis, and collaboration tools.</li>
@@ -757,7 +1162,8 @@
 <li><strong>Klipfolio:</strong> Klipfolio is a cloud-based dashboarding tool that is known for its flexibility and customization capabilities. It offers a variety of pre-built templates and visualizations, as well as the ability to create custom dashboards.</li>
 </ul>
 <p>These are just a few of the many different software tools available for data dashboarding. The best tool for you will depend on your specific needs and requirements (Yen, 2023).</p>
-<p>When choosing a data dashboarding tool, it is important to consider the following factors:</p>
+<p><br>
+When choosing a data dashboarding tool, it is important to consider the following factors:</p>
 <ul>
 <li><strong>Your budget:</strong> Data dashboarding tools can range in price from free to thousands of dollars per month.</li>
 <li><strong>Your data sources:</strong> The tool should be able to connect to the data sources that you use.</li>
@@ -766,17 +1172,18 @@
 <li><strong>Your business's needs:</strong> The tool should be easy for your team to use and understand.</li>
 </ul>
 <p>By considering these factors, you can choose the data dashboarding tool that is right for you.</p>
-<p><strong>Reference List</strong></p>
-<p>Yellowfin Team. (2022). <em>8 Business Benefits of BI Dashboards | Yellowfin BI.</em> <a href="https://www.yellowfinbi.com/blog/bi-dashboards-business-benefits">https://www.yellowfinbi.com/blog/bi-dashboards-business-benefits</a>.</p>
-<p>Successive Digital. (2022). <em>8 Key Features to Include in Your Custom Data Dashboard.</em> <a href="https://successive.tech/blog/8-key-features-to-include-in-your-custom-data-dashboard/">https://successive.tech/blog/8-key-features-to-include-in-your-custom-data-dashboard/</a>.</p>
-<p><em>Benjamin Bach. (2022). Dashboard Design Patterns. Dashboarddesignpatterns.</em></p>
-<p> <a href="https://dashboarddesignpatterns.github.io/"><em>https://dashboarddesignpatterns.github.io/</em></a><em>.</em></p>
-<p>David, M. (2023). <em>Introduction to Designing Dashboards</em>. The Data School; The Data School. <a href="https://dataschool.com/how-to-design-a-dashboard/introduction/">https://dataschool.com/how-to-design-a-dashboard/introduction/</a></p>
-<p>Manning, Arden. 2016. Workplace Automation: Making Data Visualization Smarter. Yseop.  <a href="https://yseop.com/blog/automation-making-data-visualization-smarter/">https://yseop.com/blog/automation-making-data-visualization-smarter/</a></p>
-<p>Ratibor Sekirov. (2021, October). <em>10 Data Dashboard Design Best Practices [Trends for 2022] | Aspirity</em>. Aspirity.com; Aspirity Inc. <a href="https://aspirity.com/blog/dashboard-design-overview">https://aspirity.com/blog/dashboard-design-overview</a></p>
-<p>Tableau. (2023). <em>What is a dashboard? A complete overview | Tableau.</em> <a href="https://www.tableau.com/learn/articles/dashboards/what-is">https://www.tableau.com/learn/articles/dashboards/what-is</a>.</p>
-<p>Yen, Leon. (2023, August 22). <em>10 Best Dashboard Software Solutions of 2023</em>. Datamation. <a href="https://www.datamation.com/big-data/best-dashboard-software/">https://www.datamation.com/big-data/best-dashboard-software/</a></p>
-<p>‌</p></div>
+<h2 id="reference-list">Reference List<a class="headerlink" href="#reference-list" title="Permanent link">¶</a></h2>
+<ul>
+<li>Yellowfin Team. (2022). <em>8 Business Benefits of BI Dashboards | Yellowfin BI.</em> <a href="https://www.yellowfinbi.com/blog/bi-dashboards-business-benefits">https://www.yellowfinbi.com/blog/bi-dashboards-business-benefits</a>.</li>
+<li>Successive Digital. (2022). <em>8 Key Features to Include in Your Custom Data Dashboard.</em> <a href="https://successive.tech/blog/8-key-features-to-include-in-your-custom-data-dashboard/">https://successive.tech/blog/8-key-features-to-include-in-your-custom-data-dashboard/</a>.</li>
+<li><em>Benjamin Bach. (2022). Dashboard Design Patterns. Dashboarddesignpatterns.</em></li>
+<li> <a href="https://dashboarddesignpatterns.github.io/"><em>https://dashboarddesignpatterns.github.io/</em></a><em>.</em></li>
+<li>David, M. (2023). <em>Introduction to Designing Dashboards</em>. The Data School; The Data School. <a href="https://dataschool.com/how-to-design-a-dashboard/introduction/">https://dataschool.com/how-to-design-a-dashboard/introduction/</a></li>
+<li>Manning, Arden. 2016. Workplace Automation: Making Data Visualization Smarter. Yseop.  <a href="https://yseop.com/blog/automation-making-data-visualization-smarter/">https://yseop.com/blog/automation-making-data-visualization-smarter/</a></li>
+<li>Ratibor Sekirov. (2021, October). <em>10 Data Dashboard Design Best Practices [Trends for 2022] | Aspirity</em>. Aspirity.com; Aspirity Inc. <a href="https://aspirity.com/blog/dashboard-design-overview">https://aspirity.com/blog/dashboard-design-overview</a></li>
+<li>Tableau. (2023). <em>What is a dashboard? A complete overview | Tableau.</em> <a href="https://www.tableau.com/learn/articles/dashboards/what-is">https://www.tableau.com/learn/articles/dashboards/what-is</a>.</li>
+<li>Yen, Leon. (2023, August 22). <em>10 Best Dashboard Software Solutions of 2023</em>. Datamation. <a href="https://www.datamation.com/big-data/best-dashboard-software/">https://www.datamation.com/big-data/best-dashboard-software/</a></li>
+</ul></div>
 
 
 
@@ -932,5 +1339,7 @@
         <script src="../../javascripts/misc.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
