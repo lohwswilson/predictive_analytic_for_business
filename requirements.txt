@@ -19,6 +19,7 @@
 # IN THE SOFTWARE.
 
 # Direct dependencies
+mkdocs-awesome-pages-plugin
 cairosvg
 mkdocs
 mkdocs-material
