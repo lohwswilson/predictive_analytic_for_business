@@ -1,5 +1,5 @@
 ---
-title: Overview of business analytics
+title: Overview of Business Analytics
 author: [Wilson Loh]
 date: 2022-05-01
 ---

@@ -1,5 +1,5 @@
 ---
-title: Descriptve Analytics and Data Analysis
+title: Overview of Descriptve Analytics
 author: [Wilson Loh]
 date: 2022-05-01
 ---

@@ -22,6 +22,7 @@
 mkdocs-awesome-pages-plugin
 cairosvg
 mkdocs
+mkdocs-bibtex
 mkdocs-material
 mkdocs-video
 pillow

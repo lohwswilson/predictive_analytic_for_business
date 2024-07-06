@@ -1,5 +1,5 @@
 ---
-title: Key benefits and Challenges in Business Analytics
+title: Benefits and Challenges in Business Analytics
 author: [Wilson Loh]
 date: 2022-05-01
 ---
