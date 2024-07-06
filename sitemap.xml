@@ -2,42 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ansis-ai.github.io/applied_analytics_for_business/</loc>
-         <lastmod>2024-07-05</lastmod>
+         <lastmod>2024-07-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Activities/</loc>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/</loc>
-         <lastmod>2024-07-05</lastmod>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/01_Introduction_to_Business_Analytics/</loc>
-         <lastmod>2024-07-05</lastmod>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/01_Introduction_to_Business_Analytics/01_page/</loc>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/02_Descriptive_Analytics/</loc>
-         <lastmod>2024-07-05</lastmod>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/01_Introduction_to_Business_Analytics/02_page/</loc>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/03_Data_Visualization/</loc>
-         <lastmod>2024-07-05</lastmod>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/01_Introduction_to_Business_Analytics/03_page/</loc>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/04_Data_Dashboarding/</loc>
-         <lastmod>2024-07-05</lastmod>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/01_Introduction_to_Business_Analytics/04_page/</loc>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/05_Data_Mining_Techniques/</loc>
-         <lastmod>2024-07-05</lastmod>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/01_Introduction_to_Business_Analytics/05_page/</loc>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Projects/</loc>
-         <lastmod>2024-07-05</lastmod>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/02_Descriptive_Analytics/01_page/</loc>
+         <lastmod>2024-07-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/02_Descriptive_Analytics/02_page/</loc>
+         <lastmod>2024-07-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/02_Descriptive_Analytics/03_page/</loc>
+         <lastmod>2024-07-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/03_Data_Visualization/03_Data_Visualization/</loc>
+         <lastmod>2024-07-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/04_Data_Dashboarding/04_Data_Dashboarding/</loc>
+         <lastmod>2024-07-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/05_Data_Mining_Techniques/05_Data_Mining_Techniques/</loc>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

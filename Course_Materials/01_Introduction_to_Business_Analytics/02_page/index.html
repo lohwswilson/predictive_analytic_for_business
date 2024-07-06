@@ -1,0 +1,1770 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="['Wilson Loh']">
+      
+      
+        <link rel="canonical" href="https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/01_Introduction_to_Business_Analytics/02_page/">
+      
+      
+        <link rel="prev" href="../01_page/">
+      
+      
+        <link rel="next" href="../03_page/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+  <title>ANSIS</title>
+
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Adlam+Unjoined:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans Adlam Unjoined";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/output.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Key benefits and Challenges in Business Analytics - Applied Analytics for Business" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://ansis-ai.github.io/applied_analytics_for_business/assets/images/social/Course_Materials/01_Introduction_to_Business_Analytics/02_page.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/01_Introduction_to_Business_Analytics/02_page/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Key benefits and Challenges in Business Analytics - Applied Analytics for Business" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://ansis-ai.github.io/applied_analytics_for_business/assets/images/social/Course_Materials/01_Introduction_to_Business_Analytics/02_page.png" >
+      
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#challenges-of-implementing-business-analytics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://ansis.com.sg" title="Applied Analytics for Business" class="md-header__button md-logo" aria-label="Applied Analytics for Business" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Applied Analytics for Business
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Key benefits and Challenges in Business Analytics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ansis-ai/applied_analytics_for_business.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ansis-ai/applied_analytics_for_business.git
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Module Information
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Course Materials
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Course_Activities/" class="md-tabs__link">
+          
+  
+    
+  
+  Course Activities
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ansis.com.sg" title="Applied Analytics for Business" class="md-nav__button md-logo" aria-label="Applied Analytics for Business" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Applied Analytics for Business
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ansis-ai/applied_analytics_for_business.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ansis-ai/applied_analytics_for_business.git
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Course Materials
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Course Materials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Introduction to Business Analytics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction to Business Analytics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview of business analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Key benefits and Challenges in Business Analytics
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Key benefits and Challenges in Business Analytics
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenges-of-implementing-business-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Challenges of Implementing Business Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Challenges of Implementing Business Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Quality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Security
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skill-shortage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skill Shortage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addressing-the-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Addressing the Challenges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Addressing the Challenges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#improving-data-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Improving Data Quality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-data-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Data Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplifying-data-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplifying Data Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancing-data-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enhancing Data Security
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bridging-the-skill-gap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bridging the Skill Gap
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-analytics-technologies-landscape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Analytics Technologies Landscape
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-solving-with-business-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Solving with Business Analytics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-successful-data-driven-decision-making-using-data-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 Successful Data Driven Decision Making Using Data Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 Successful Data Driven Decision Making Using Data Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walmart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Walmart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netflix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Netflix
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference List
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data for Business Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problem Solving with Business Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Successful Business Analytics Initiatives in Different Industries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Descriptive Analytics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Descriptive Analytics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Descriptive_Analytics/01_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Descriptve Analytics and Data Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Descriptive_Analytics/02_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Driven vs Model Driven Approaches
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Descriptive_Analytics/03_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Descriptive Statistics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data Visualization
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Data Visualization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Data_Visualization/03_Data_Visualization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data Dashboarding
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Data Dashboarding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Data_Dashboarding/04_Data_Dashboarding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Dashboarding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data Mining Techniques
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Data Mining Techniques
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Data_Mining_Techniques/05_Data_Mining_Techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Mining Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Course_Activities/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Course Activities
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Course Activities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenges-of-implementing-business-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Challenges of Implementing Business Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Challenges of Implementing Business Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Quality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Security
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skill-shortage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skill Shortage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addressing-the-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Addressing the Challenges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Addressing the Challenges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#improving-data-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Improving Data Quality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-data-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Data Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplifying-data-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplifying Data Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancing-data-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enhancing Data Security
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bridging-the-skill-gap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bridging the Skill Gap
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-analytics-technologies-landscape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Analytics Technologies Landscape
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-solving-with-business-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Solving with Business Analytics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-successful-data-driven-decision-making-using-data-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 Successful Data Driven Decision Making Using Data Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 Successful Data Driven Decision Making Using Data Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walmart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Walmart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netflix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Netflix
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference List
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Key benefits and Challenges in Business Analytics</h1>
+
+<div><p>The implementation of business analytics empowers organizations to harness the power of data, leading to smarter decisions, improved operations, and a stronger competitive position in the market (<em>Business Analytics: What It Is &amp; Why It’s Important | HBS Online</em>, 2019).</p>
+<p>Here are some of the key advantages:</p>
+<ol>
+<li><strong>Improved Decision-Making:</strong> Business analytics acts as a guiding light for organizations, illuminating valuable insights within their complex operations that would otherwise remain concealed. It empowers businesses to make precise, data-driven decisions by providing comprehensive insights, enhancing precision in targeting efforts, minimizing risk, enabling real-time decision-making, and facilitating strategic planning and forecasting. In a data-rich landscape, business analytics emerges as a beacon, navigating organizations towards more informed, efficient, and strategic decision-making, ultimately leading to competitive advantage and success in their respective industries.</li>
+<li><strong>Improved Efficiency:</strong> Business analytics serves as a compass for organizations on their quest for increased efficiency. It not only identifies cost-saving opportunities and productivity enhancements but also accelerates decision-making, aids in resource allocation, and cultivates a culture of ongoing improvement. In a landscape where operational excellence is the key to competitiveness, business analytics becomes the catalyst for organizations seeking to do more with less and drive sustainable success.</li>
+<li><strong>Enhanced Competitive Advantage:</strong> business analytics serves as a strategic compass for organizations aiming to outpace their competitors. It equips them with the ability to swiftly identify market trends, understand customer preferences, respond nimbly to opportunities, benchmark against rivals, and innovate with a competitive advantage in mind. In an era where agility and market intelligence are the keys to dominance, business analytics becomes the catalyst for organizations striving to lead in their respective industries.</li>
+<li><strong>Enhanced Customer Experience:</strong> Business analytics plays a pivotal role in elevating the customer experience by enabling organizations to provide personalized recommendations, offers, and efficient customer service. It empowers businesses to anticipate customer needs, tailor product suggestions, and customize discounts based on individual preferences. Analytics also aids in feedback analysis, helping companies address concerns and refine their offerings continuously. The result is a more engaging and satisfying customer journey that fosters loyalty and enhances the overall brand image, making business analytics an essential tool for customer-centric success in today's competitive market.</li>
+<li><strong>Improved Risk Management:</strong> Business analytics serves as a vital tool for organizations in strengthening their risk management strategies. It empowers businesses to identify, assess, and proactively mitigate potential risks across various operational areas, including financial, operational, and regulatory domains. Through predictive modelling, fraud detection, scenario analysis, and real-time monitoring, analytics aids in risk anticipation and swift response. By incorporating business analytics into their risk management practices, organizations can enhance their resilience, protect their assets, and maintain stability in an increasingly dynamic and uncertain business environment.</li>
+</ol>
+<h2 id="challenges-of-implementing-business-analytics">Challenges of Implementing Business Analytics<a class="headerlink" href="#challenges-of-implementing-business-analytics" title="Permanent link">¶</a></h2>
+<p>In general, data analytics is a tool that helps businesses improve their decision-making, enhance efficiency, and gain a competitive edge. However, given the rapid growth in data volume and the evident challenges related to storing, managing, and analysing this data, achieving these objectives can be quite demanding.</p>
+<p>Therefore, businesses, particularly analysts, need to be well-informed about the potential hurdles in data analysis. This knowledge is crucial for finding effective ways to overcome these challenges and extract valuable insights to guide business decisions and operations.</p>
+<p>Implementing business analytics presents several challenges, each impacting the efficiency and accuracy of the insights derived from data. Here is a deeper look into these challenges with more detailed explanations and examples. (<em>Pathstream, 2022</em>).</p>
+<h3 id="data-quality">Data Quality<a class="headerlink" href="#data-quality" title="Permanent link">¶</a></h3>
+<p>Data quality is a critical factor in the success of data analytics initiatives. Poor data quality can arise from various issues, including errors during manual data entry, inconsistencies across different data sources, and outdated or incomplete information. These problems can lead to inaccurate analyses and misguided business decisions.</p>
+<ul>
+<li><strong>Examples</strong>:<ol>
+<li><strong>Customer Information</strong>: A retail company relies on customer data to personalize marketing campaigns. If the data contains incorrect email addresses or duplicate entries, marketing efforts may be wasted on unreachable or redundant contacts.</li>
+<li><strong>Financial Reports</strong>: An accounting firm generates financial reports based on transaction data. If this data contains errors due to manual entry mistakes, the reports may misrepresent the company's financial health, leading to poor strategic decisions.</li>
+</ol>
+</li>
+</ul>
+<h3 id="data-volume">Data Volume<a class="headerlink" href="#data-volume" title="Permanent link">¶</a></h3>
+<p>The volume of data businesses collect is expanding rapidly due to digital technologies, IoT devices, and increased online interactions. Managing and analyzing this massive amount of data can overwhelm existing infrastructure and traditional analytical methods.</p>
+<ul>
+<li><strong>Examples</strong>:<ol>
+<li><strong>E-Commerce Platform</strong>: An online retailer like Amazon collects vast amounts of data from customer interactions, sales, and reviews. Storing and processing this data requires advanced infrastructure and technologies like cloud computing and big data analytics tools.</li>
+<li><strong>Smart Cities</strong>: Smart city initiatives gather data from sensors, cameras, and other IoT devices to monitor traffic, energy usage, and public safety. Managing this continuous stream of data demands scalable storage solutions and real-time analytics capabilities.</li>
+</ol>
+</li>
+</ul>
+<h3 id="data-complexity">Data Complexity<a class="headerlink" href="#data-complexity" title="Permanent link">¶</a></h3>
+<p>Data complexity refers to the varied nature of data collected by businesses, including structured, semi-structured, and unstructured formats. This diversity, coupled with the volume and velocity of data, makes it challenging to integrate, analyze, and derive meaningful insights.</p>
+<ul>
+<li><strong>Examples</strong>:<ol>
+<li><strong>Healthcare Systems</strong>: Hospitals collect structured data from electronic health records (EHRs), semi-structured data from lab reports, and unstructured data from doctors' notes. Integrating and analyzing these diverse data types to improve patient care and operational efficiency is complex.</li>
+<li><strong>Social Media Analytics</strong>: Companies analyze social media data to understand brand sentiment. This involves processing unstructured data like text, images, and videos from platforms such as Twitter and Instagram, which requires sophisticated natural language processing (NLP) and computer vision techniques.</li>
+</ol>
+</li>
+</ul>
+<h3 id="data-security">Data Security<a class="headerlink" href="#data-security" title="Permanent link">¶</a></h3>
+<p>As data volumes grow, so do the risks associated with data breaches and cyber-attacks. Ensuring data security involves protecting sensitive information from unauthorized access, maintaining data integrity, and complying with regulatory requirements such as GDPR and CCPA.</p>
+<ul>
+<li><strong>Examples</strong>:<ol>
+<li><strong>Financial Institutions</strong>: Banks handle sensitive customer data, including personal information and transaction records. Implementing robust security measures to prevent breaches and comply with regulations is crucial to maintaining customer trust.</li>
+<li><strong>Healthcare Providers</strong>: Hospitals must protect patient data to comply with HIPAA regulations. This involves securing data storage systems, implementing access controls, and regularly monitoring for potential threats.</li>
+</ol>
+</li>
+</ul>
+<h3 id="skill-shortage">Skill Shortage<a class="headerlink" href="#skill-shortage" title="Permanent link">¶</a></h3>
+<p>There is a significant shortage of professionals with the necessary skills to effectively analyze and interpret data. This shortage spans various areas, including technical expertise in data science and analytics, knowledge of specific tools and technologies, and the ability to apply analytical insights to business strategies.</p>
+<ul>
+<li><strong>Examples</strong>:<ol>
+<li><strong>Tech Companies</strong>: Companies like Google and Facebook require data scientists to develop algorithms that drive their core business operations. The high demand for these skills often outstrips supply, leading to fierce competition for talent.</li>
+<li><strong>Small and Medium Enterprises (SMEs)</strong>: Smaller businesses may struggle to attract and retain skilled data analysts due to budget constraints, making it challenging to leverage data analytics for business growth.</li>
+</ol>
+</li>
+</ul>
+<h2 id="addressing-the-challenges">Addressing the Challenges<a class="headerlink" href="#addressing-the-challenges" title="Permanent link">¶</a></h2>
+<p>To overcome these challenges, businesses can adopt several strategies:</p>
+<h3 id="improving-data-quality">Improving Data Quality<a class="headerlink" href="#improving-data-quality" title="Permanent link">¶</a></h3>
+<ul>
+<li>Implement automated data entry systems to reduce manual errors.</li>
+<li>Regularly audit and clean data to ensure accuracy and consistency.</li>
+<li>Use data integration tools to synchronize data across different systems.</li>
+</ul>
+<h3 id="managing-data-volume">Managing Data Volume<a class="headerlink" href="#managing-data-volume" title="Permanent link">¶</a></h3>
+<ul>
+<li>Invest in scalable cloud storage solutions to handle large data volumes.</li>
+<li>Utilize big data platforms like Hadoop and Spark for efficient data processing.</li>
+<li>Implement data lifecycle management practices to archive or delete obsolete data.</li>
+</ul>
+<h3 id="simplifying-data-complexity">Simplifying Data Complexity<a class="headerlink" href="#simplifying-data-complexity" title="Permanent link">¶</a></h3>
+<ul>
+<li>Use data integration platforms to consolidate data from multiple sources.</li>
+<li>Apply advanced analytics techniques like NLP and machine learning to analyze unstructured data.</li>
+<li>Develop standardized data formats and protocols to facilitate data interoperability.</li>
+</ul>
+<h3 id="enhancing-data-security">Enhancing Data Security<a class="headerlink" href="#enhancing-data-security" title="Permanent link">¶</a></h3>
+<ul>
+<li>Implement strong encryption methods for data storage and transmission.</li>
+<li>Establish comprehensive data governance policies to control access and usage.</li>
+<li>Regularly update security protocols to counter evolving cyber threats.</li>
+</ul>
+<h3 id="bridging-the-skill-gap">Bridging the Skill Gap<a class="headerlink" href="#bridging-the-skill-gap" title="Permanent link">¶</a></h3>
+<ul>
+<li>Invest in training and development programs to upskill existing employees.</li>
+<li>Collaborate with educational institutions to develop specialized data analytics curricula.</li>
+<li>Leverage external consultants or managed services to access specialized expertise.</li>
+</ul>
+<p>By understanding and addressing these challenges, businesses can effectively implement data analytics to drive informed decision-making, enhance operational efficiency, and gain a competitive advantage.</p>
+<h2 id="business-analytics-technologies-landscape">Business Analytics Technologies Landscape<a class="headerlink" href="#business-analytics-technologies-landscape" title="Permanent link">¶</a></h2>
+<p>Over the past decade, the predominant trend was the age of big data. Emerging data sources like online clickstreams necessitated the introduction of various new hardware solutions, both on-premises and in cloud environments. These solutions primarily revolved around distributed computing, which involves distributing analytical calculations across multiple standard servers, or specialized data appliances.</p>
+<p><br>
+In addition to advancements in hardware, the necessity to store and process large datasets in innovative ways gave rise to a wide array of open-source software solutions, including Hadoop and various scripting languages. Hadoop, for instance, serves as a platform for storing and conducting basic processing of extensive datasets, often proving to be significantly more cost-effective, often by a factor of ten, compared to traditional data warehouses when handling similar data volumes. Nowadays, numerous organizations are implementing Hadoop-based data lakes to retain various data types in their original formats until the need arises to structure and analyse them.</p>
+<p><br>
+Given that a substantial portion of big data lacks inherent structure, data scientists have devised methods to organize it for statistical analysis. This is accomplished using both new and established scripting languages like Pig, Hive, and Python. Furthermore, specialized open-source tools such as Spark for streaming data and R for statistical analysis have also garnered considerable popularity. The process of adopting and utilizing open-source software represents a substantial shift, particularly for well-established businesses (<em>How Analytics Has Changed in the Last 10 Years (and How It’s Stayed the Same)</em>, 2017).</p>
+<h2 id="problem-solving-with-business-analytics">Problem Solving with Business Analytics<a class="headerlink" href="#problem-solving-with-business-analytics" title="Permanent link">¶</a></h2>
+<p>Problem-solving using business analytics involves a structured process starting with problem recognition, precise problem definition, and structural breakdown. Data analysis is central, utilizing various techniques to interpret results and make informed decisions. The final step is implementing solutions based on insights gained.</p>
+<p>This systematic approach enables organizations to address challenges and seize opportunities by leveraging data-driven insights effectively (Cordes, 2014).</p>
+<p><br>
+1. <strong>Recognizing a Problem:</strong> The first step in problem-solving using business analytics is recognizing that a problem or opportunity exists. This often involves identifying a specific challenge or a potential improvement in your organization's operations or strategies. For instance, a retail company might notice a decline in online sales despite increased website traffic, indicating a problem with conversion rates.</p>
+<p><br>
+2. <strong>Defining the Problem:</strong> Once the problem is recognized, it needs to be precisely defined. This means clarifying the problem's scope, objectives, and the desired outcomes. Continuing with the retail example, the company might define the problem as "low online conversion rates leading to decreased revenue."</p>
+<p><br>
+3. <strong>Structuring the Problem:</strong> Structuring the problem involves breaking it down into manageable components and understanding the relationships between them. It often involves identifying relevant data sources and metrics that can provide insights into the problem. In the retail scenario, structuring the problem might involve looking at website traffic data, customer demographics, and purchase patterns.</p>
+<p><br>
+4. <strong>Analysing the Problem:</strong> With a structured problem, you can start collecting and analysing data to gain insights. This step may involve using various analytical techniques such as statistical analysis, data mining, or machine learning. In our retail example, you might use customer behaviour data to identify patterns or correlations that shed light on why conversion rates are low.</p>
+<p><br>
+5. <strong>Interpreting Results and Making a Decision</strong>: Once the analysis is complete, it's time to interpret the results. This means understanding what the data is telling you and how it relates to the defined problem. Based on these insights, you can make informed decisions. In the retail case, you might discover that certain customer segments have a higher conversion rate, leading to a decision to target marketing efforts specifically at those segments.</p>
+<p><br>
+6. <strong>Implementing the Solution:</strong> Implementing the solution involves taking concrete actions based on your decisions. This could include making changes to processes, launching new marketing campaigns, or adjusting product offerings. In the retail example, implementing the solution might involve redesigning the website to improve user experience for the identified customer segments.</p>
+<p>To summarize, problem-solving using business analytics is a structured process that starts with recognizing a problem, defining it clearly, breaking it down into manageable components, analysing relevant data, interpreting the results, making informed decisions, and finally, implementing solutions to address the problem or capitalize on opportunities. This systematic approach empowers organizations to leverage data-driven insights for more effective decision-making and improved business outcomes.</p>
+<h2 id="3-successful-data-driven-decision-making-using-data-analytics">3 Successful Data Driven Decision Making Using Data Analytics<a class="headerlink" href="#3-successful-data-driven-decision-making-using-data-analytics" title="Permanent link">¶</a></h2>
+<p>Now that we have developed a more understanding of the concept of making decisions based on data and their significance, we will explore five motivating instances of data-driven decision-making.</p>
+<h3 id="google">Google<a class="headerlink" href="#google" title="Permanent link">¶</a></h3>
+<p>One of the most remarkable instances of data-driven decision-making is exemplified by Google. The company was intrigued by the question of whether the presence of managers had a genuine impact.</p>
+<p><br>
+To address this inquiry, Google's data scientists examined performance reviews and employee surveys from the subordinates of managers (qualitative data). They visualized this data on a graph and concluded that, managers were generally viewed positively. Google then took it a step further by segmenting the data into the top and bottom quartiles and conducting regression analyses. These analyses revealed substantial differences between the most effective and least effective managers in terms of team productivity, employee satisfaction, and employee retention. Essentially, proficient managers not only contribute to Google's financial success but also foster a more content workforce. The question that remains is, what qualities define a proficient manager at Google?</p>
+<h3 id="walmart">Walmart<a class="headerlink" href="#walmart" title="Permanent link">¶</a></h3>
+<p>Walmart employed a similar approach in preparing emergency supplies for Hurricane Frances in 2004, as reported by The New York Times. Company executives sought insights into the specific merchandise they should stock before the hurricane hit. Their analysts delved into historical purchase records from other Walmart stores that had faced similar circumstances, sifting through a vast terabyte of customer data to determine which products to dispatch to Florida (quantitative data). Surprisingly, it was discovered that during natural disasters, Americans turned to strawberry Pop-Tarts and beer. Linda M. Dillon, who served as Walmart's Chief Information Officer at the time, elucidated this process, stating, "By forecasting what would occur, rather than waiting for it to happen... trucks loaded with toaster pastries and six-packs were swiftly dispatched down Interstate 95 toward Walmart stores in the path of Hurricane Frances." In doing so, Walmart not only ensured that Floridians had an ample supply of beer and Pop-Tarts during the storm but also generated profits by accurately anticipating the surge in demand, resulting in rapid product sales.</p>
+<h3 id="netflix">Netflix<a class="headerlink" href="#netflix" title="Permanent link">¶</a></h3>
+<p>Boasting more than 128 million active users, Netflix has established itself as the dominant force in the streaming service sector, owing much of its success to its adept utilization of data for customer retention. As the industry grows increasingly competitive, the company recognized the need to elevate the user experience and foster customer loyalty.</p>
+<p><br>
+To achieve this, Netflix embarked on a comprehensive examination of various metrics related to customer behaviours and interactions. These metrics encompassed factors such as viewing duration, time of engagement, geographical location, preferred content genres, and even user actions like pausing and resuming content. Armed with this invaluable data, they meticulously crafted a highly precise recommendation algorithm aimed at enhancing the viewer's content consumption experience.</p>
+<p><br>
+Following the implementation of this algorithm, Netflix conducted a thorough analysis of the outcomes and observed that nearly 80% of users were following the recommendations. This marked a resounding success in their quest to bolster customer retention rates and maintain their competitive edge. It serves as an exemplary instance of effective data-driven decision-making (source: The Advantages of Data-Driven Decision-Making | HBS Online, 2019).</p>
+<h2 id="reference-list">Reference List<a class="headerlink" href="#reference-list" title="Permanent link">¶</a></h2>
+<ul>
+<li>Tableau. (2023). Big Data Analytics: What It Is &amp; How It Works | Tableau. <a href="https://www.tableau.com/learn/articles/big-data-analytics">https://www.tableau.com/learn/articles/big-data-analytics</a>.</li>
+<li>Matt Gavin. (Jul 16, 2019). Business Analytics: What It Is &amp; Why It's Important | HBS Online. <a href="https://online.hbs.edu/blog/post/importance-of-business-analytics">https://online.hbs.edu/blog/post/importance-of-business-analytics</a>. Camm, J. D., Cochran, J. J., &amp; Fry, M. J. (2020). Business analytics. Cengage.</li>
+<li>Sam Cordes. (2014). Business Analysis Problem Solving Techniques - The Business Analyst's Toolkit. <a href="https://www.businessanalyststoolkit.com/business-analysis-problem-solving-techniques/">https://www.businessanalyststoolkit.com/business-analysis-problem-solving-techniques/</a>.</li>
+<li>Statista. (2020). Data growth worldwide 2010-2025 | Statista. <a href="https://www.statista.com/statistics/871513/worldwide-data-created/">https://www.statista.com/statistics/871513/worldwide-data-created/</a>.</li>
+<li>Michalis Zinieris. (2021). Data: a small four-letter word which has grown exponentially to such a big value. <a href="https://www2.deloitte.com/cy/en/pages/technology/articles/data-grown-big-value.html..html">https://www2.deloitte.com/cy/en/pages/technology/articles/data-grown-big-value.html..html</a>.</li>
+<li><em>Thomas H. Davenport. (June 22, 2017). How Analytics Has Changed in the Last 10 Years (and How It’s Stayed the Same). Harvard Business Review.</em> <a href="https://hbr.org/2017/06/how-analytics-has-changed-in-the-last-10-years-and-how-its-stayed-the-same"><em>https://hbr.org/2017/06/how-analytics-has-changed-in-the-last-10-years-and-how-its-stayed-the-same</em></a><em>.</em></li>
+<li>Krishna, S., &amp; Swamy, K. (2023). Business Analytics− A Systematic Literature review. Academy of Marketing Studies Journal, 27(S2).</li>
+<li>SCU. (2023). <em>The Four Types of Business Analytics: Driving Better Business Decisions</em>. [online] Available at: <a href="https://onlinedegrees.scu.edu/media/blog/data-analytics-driving-better-business-decisions">https://onlinedegrees.scu.edu/media/blog/data-analytics-driving-better-business-decisions</a> [Accessed 29 Sep. 2023].</li>
+<li>O’Neill, S. (2023, February 22). Key Takeaways from the 2023 ML, AI &amp; Data Landscape Report. Lxahub.com; LXA. <a href="https://www.lxahub.com/stories/key-takeaways-from-the-2023-ml-ai-data-landscape-report">https://www.lxahub.com/stories/key-takeaways-from-the-2023-ml-ai-data-landscape-report</a></li>
+<li>Pathstream. (2022, May 20). 10 Common data analysis challenges facing businesses - Pathstream. Pathstream. <a href="https://www.pathstream.com/data-analysis-challenges/">https://www.pathstream.com/data-analysis-challenges/</a></li>
+<li>Tim Stobierski (2019). <em>The Advantages of Data-Driven Decision-Making | HBS Online.</em> <a href="https://online.hbs.edu/blog/post/data-driven-decision-making">https://online.hbs.edu/blog/post/data-driven-decision-making</a>.</li>
+<li>Oracle. (2021). <em>What Is Big Data? | Oracle Singapore.</em> <a href="https://www.oracle.com/sg/big-data/what-is-big-data/">https://www.oracle.com/sg/big-data/what-is-big-data/</a>.</li>
+</ul></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01_page/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview of business analytics">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview of business analytics
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03_page/" class="md-footer__link md-footer__link--next" aria-label="Next: Data for Business Analytics">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Data for Business Analytics
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      This documentation is hosted by <a href="https://ansis.com.sg/">ANSIS Pte Ltd</a>
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.code.copy", "navigation.footer", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "navigation.path", "tabs"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/atom.js"></script>
+      
+        <script src="../../../javascripts/misc.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

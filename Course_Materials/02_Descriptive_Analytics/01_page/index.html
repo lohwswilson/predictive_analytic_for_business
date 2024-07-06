@@ -1,0 +1,1702 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="['Wilson Loh']">
+      
+      
+        <link rel="canonical" href="https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/02_Descriptive_Analytics/01_page/">
+      
+      
+        <link rel="prev" href="../../01_Introduction_to_Business_Analytics/05_page/">
+      
+      
+        <link rel="next" href="../02_page/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+  <title>ANSIS</title>
+
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Adlam+Unjoined:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans Adlam Unjoined";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/output.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Descriptve Analytics and Data Analysis - Applied Analytics for Business" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://ansis-ai.github.io/applied_analytics_for_business/assets/images/social/Course_Materials/02_Descriptive_Analytics/01_page.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/02_Descriptive_Analytics/01_page/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Descriptve Analytics and Data Analysis - Applied Analytics for Business" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://ansis-ai.github.io/applied_analytics_for_business/assets/images/social/Course_Materials/02_Descriptive_Analytics/01_page.png" >
+      
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-descriptive-analytics-and-its-role-in-data-analysis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://ansis.com.sg" title="Applied Analytics for Business" class="md-header__button md-logo" aria-label="Applied Analytics for Business" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Applied Analytics for Business
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Descriptve Analytics and Data Analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ansis-ai/applied_analytics_for_business.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ansis-ai/applied_analytics_for_business.git
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Module Information
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Course Materials
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Course_Activities/" class="md-tabs__link">
+          
+  
+    
+  
+  Course Activities
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ansis.com.sg" title="Applied Analytics for Business" class="md-nav__button md-logo" aria-label="Applied Analytics for Business" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Applied Analytics for Business
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ansis-ai/applied_analytics_for_business.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ansis-ai/applied_analytics_for_business.git
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Course Materials
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Course Materials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Introduction to Business Analytics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction to Business Analytics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Introduction_to_Business_Analytics/01_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview of business analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Introduction_to_Business_Analytics/02_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key benefits and Challenges in Business Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Introduction_to_Business_Analytics/03_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data for Business Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Introduction_to_Business_Analytics/04_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problem Solving with Business Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Introduction_to_Business_Analytics/05_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Successful Business Analytics Initiatives in Different Industries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Descriptive Analytics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Descriptive Analytics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Descriptve Analytics and Data Analysis
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Descriptve Analytics and Data Analysis
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-descriptive-analytics-and-its-role-in-data-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to descriptive analytics and its role in data analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-driven-vs-model-driven-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Driven vs Model Driven Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aspect-of-data-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aspect of Data Quality
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scale-of-measurement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale of Measurement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#central-tendency-measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Central Tendency Measures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribution-frequency-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribution - Frequency Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measures-of-variability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measures of variability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measure-of-shape-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measure of Shape Distribution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#correlation-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Correlation Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference List
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Driven vs Model Driven Approaches
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Descriptive Statistics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data Visualization
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Data Visualization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Data_Visualization/03_Data_Visualization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data Dashboarding
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Data Dashboarding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Data_Dashboarding/04_Data_Dashboarding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Dashboarding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data Mining Techniques
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Data Mining Techniques
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Data_Mining_Techniques/05_Data_Mining_Techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Mining Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Course_Activities/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Course Activities
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Course Activities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-descriptive-analytics-and-its-role-in-data-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to descriptive analytics and its role in data analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-driven-vs-model-driven-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Driven vs Model Driven Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aspect-of-data-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aspect of Data Quality
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scale-of-measurement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale of Measurement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#central-tendency-measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Central Tendency Measures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribution-frequency-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribution - Frequency Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measures-of-variability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measures of variability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measure-of-shape-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measure of Shape Distribution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#correlation-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Correlation Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference List
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Descriptve Analytics and Data Analysis</h1>
+
+<div><h2 id="introduction-to-descriptive-analytics-and-its-role-in-data-analysis">Introduction to descriptive analytics and its role in data analysis<a class="headerlink" href="#introduction-to-descriptive-analytics-and-its-role-in-data-analysis" title="Permanent link">¶</a></h2>
+<p>Business Analytics Domain of business analytics encompasses three key areas: descriptive analytics, predictive analytics, and prescriptive analytics. Databases and Data Warehousing facilitate efficient data storage and retrieval. Descriptive analytics focuses on reporting past events, while predictive analytics creates future predictions based on historical data. Prescriptive analytics employs optimization, heuristics, or simulation models to recommend optimal solutions and actions (Asllani, A., 2015).</p>
+<p><br>
+Descriptive analytics involves quantitatively summarizing organizational data's key characteristics. Its goal is to summarize a sample of data rather than make inferences about the broader population it represents. Common tools in descriptive statistics include sampling, measures like mean and median, graphical representations, and summary statistics presented through charts, tables, and single numerical values.</p>
+<p><br>
+Descriptive analytics, as exemplified by Netflix, involves identifying trends in customer preferences and behaviour. Netflix collects user data to determine which TV series and movies are trending, displaying them prominently on its platform. This not only helps users discover popular content but also informs Netflix's decision-making regarding future content creation, production contracts, marketing strategies, and retargeting campaigns, showcasing the practical use of descriptive analytics in enhancing user experience and guiding business strategies (What Is Descriptive Analytics? 5 Examples | HBS Online, 2021).</p>
+<h2 id="data-driven-vs-model-driven-approach">Data Driven vs Model Driven Approach<a class="headerlink" href="#data-driven-vs-model-driven-approach" title="Permanent link">¶</a></h2>
+<p>Descriptive analytics encompasses two primary methodologies: data-driven and model-driven approaches.</p>
+<p><br>
+Data-driven descriptive analytics relies on data to portray past occurrences or trends without requiring prior knowledge of the system or process under scrutiny. This approach proves valuable in scenarios where comprehension of the system or process is limited.</p>
+<p><br>
+Model-driven descriptive analytics employs a pre-established model of the system or process to depict past events or trends. This necessitates some prior knowledge of the system or process but has the potential to yield more precise and intricate insights.</p>
+<p><br>
+The choice between these approaches depends on the specific circumstances. When understanding of the system or process is minimal, data-driven descriptive analytics is a suitable choice. Conversely, when there is a more comprehensive understanding, model-driven descriptive analytics can be employed to attain more accurate and detailed insights (<em>Reality Analytics, 2016</em>).</p>
+<p><br>
+Here are some examples illustrating the applications of each approach:</p>
+<p><br>
+Data-driven descriptive analytics can be utilized to:</p>
+<ul>
+<li>Identify trends in customer behaviour</li>
+<li>Analyse the effectiveness of a marketing campaign</li>
+<li>Track the performance of a machine learning model</li>
+</ul>
+<p>Model-driven descriptive analytics can be employed to:</p>
+<ul>
+<li>Understand the impact of a new product launch</li>
+<li>Forecast demand for a product</li>
+<li>Analyse the risk of a financial crisis</li>
+</ul>
+<p>In general, data-driven descriptive analytics offers greater flexibility and can be applied across a broader spectrum of scenarios. However, model-driven descriptive analytics can deliver heightened accuracy and detailed insights when there exists a solid grasp of the system or process under examination.</p>
+<h2 id="aspect-of-data-quality">Aspect of Data Quality<a class="headerlink" href="#aspect-of-data-quality" title="Permanent link">¶</a></h2>
+<p>Data quality plays a pivotal role in evaluating whether information is suitable for a specific context, such as data analysis. To gauge the quality of a dataset, it's essential to consider specific data quality characteristics. These characteristics encompass five key traits: accuracy, completeness, reliability, relevance, and timeliness, each of which is essential for assessing data quality effectively (Rachel Levy Sarfin, 2022).</p>
+<ul>
+<li>
+<p><strong>Accuracy:</strong> As the term suggests, pertains to the correctness of information. To ascertain the accuracy of data, it's essential to consider if the information accurately represents a real-world scenario.</p>
+</li>
+<li>
+<p><strong>Completeness:</strong> It involves ensuring that all necessary data points are present and accounted for. For instance, while collecting customer information, you may require both the first and last names, with the middle initial being optional. The importance of completeness in data quality lies in its usability</p>
+</li>
+<li>
+<p><strong>Timeliness:</strong> Timeliness refers to the freshness or recency of data. It assesses whether data is up-to-date and relevant within the current timeframe. Timeliness is crucial in scenarios where outdated data can lead to missed opportunities or inaccurate assessments. Ensuring data is timely involves maintaining regular updates and minimizing delays in data collection and reporting.</p>
+</li>
+<li>
+<p><strong>Reliability:</strong> In the context of data quality, reliability indicates that a piece of information does not contradict information from other sources or systems. Reliability is a critical data quality characteristic because when data contradicts itself, trust in the information is compromised. Such inconsistencies can lead to costly errors and reputational damage for a business or organization.</p>
+</li>
+<li>
+<p><strong>Relevance:</strong> Relevance pertains to whether the data is pertinent and applicable to the context in which it is used. It involves ensuring that the data collected or analysed serves a meaningful purpose and aligns with the objectives of the analysis or decision-making process. For example, in a marketing campaign, relevant data would include customer demographics and preferences that directly influence campaign targeting. Irrelevant data can clutter analyses and lead to misguided decisions.</p>
+</li>
+</ul>
+<h2 id="types-of-data">Types of data<a class="headerlink" href="#types-of-data" title="Permanent link">¶</a></h2>
+<p>Data types encompass various attributes or quantities that exhibit variability among different units of investigation. These attributes can take on different values, making them key elements in data analysis.</p>
+<p>When dealing with quantitative data, it can be categorized into two main types: discrete and continuous data.</p>
+<ul>
+<li>
+<p><strong>Discrete Data:</strong> Discrete data refers to a variate that can assume only a finite or countable number of distinct values. This type of data typically involves counting or enumerating items. For example, when counting the number of customers in a store, the resulting data is discrete since it can only take on whole numbers, such as 1, 2, 3, and so forth. Discrete data is often represented using bar charts or histograms, which visually display the frequency of each possible value.</p>
+</li>
+<li>
+<p><strong>Continuous Data:</strong> On the other hand, continuous data relates to a variate that represents measurements and can take any value within a specific interval along the real number line. These measurements can include quantities like weight, height, or temperature. Unlike discrete data, continuous data can assume an infinite number of values within its range. Visual representations of continuous data typically involve smooth curves, such as probability density functions or frequency polygons. Continuous data analysis often involves calculating statistics like mean, standard deviation, and percentiles to understand central tendencies and variability within the data.</p>
+</li>
+</ul>
+<p>Understanding the distinction between discrete and continuous data types is essential in descriptive statistics, as it influences the choice of appropriate statistical techniques and visualizations for analysing and interpreting the data effectively.</p>
+<h2 id="scale-of-measurement">Scale of Measurement<a class="headerlink" href="#scale-of-measurement" title="Permanent link">¶</a></h2>
+<p>In statistics, measurement scales, also known as levels of measurement or types of data, classify variables into four main categories based on the nature of the data and the mathematical operations that can be performed on them. These four measurement scales are:</p>
+<ol>
+<li><strong>Nominal Scale:</strong><ul>
+<li>Nominal data represent categories or labels that cannot be ranked or ordered.</li>
+<li>It is the simplest form of measurement scale.</li>
+<li>You can only perform basic operations like counting and mode calculation on nominal data.</li>
+<li>Examples:<ul>
+<li>Colours (e.g., red, blue, green)</li>
+<li>Marital status (e.g., married, single, divorced)</li>
+<li>Types of animals (e.g., cat, dog, bird)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Ordinal Scale:</strong><ul>
+<li>Ordinal data represent categories with a natural order or ranking.</li>
+<li>The intervals between categories are not necessarily equal.</li>
+<li>You can perform operations like counting, mode calculation, and median calculation on ordinal data.</li>
+<li>Examples:<ul>
+<li>Educational levels (e.g., elementary, middle school, high school, college)</li>
+<li>Customer satisfaction ratings (e.g., very dissatisfied, dissatisfied, neutral, satisfied, very satisfied)</li>
+<li>Socioeconomic status (e.g., low income, middle income, high income)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Interval Scale:</strong><ul>
+<li>Interval data represent values with equal intervals between them, but they lack a true zero point.</li>
+<li>Arithmetic operations such as addition and subtraction can be performed, but multiplication and division are not meaningful.</li>
+<li>Examples:<ul>
+<li>Temperature measured in degrees Celsius or Fahrenheit (0°C does not mean absence of temperature)</li>
+<li>IQ scores (a score of 0 does not mean a complete lack of intelligence)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Ratio Scale:</strong><ul>
+<li>Ratio data have all the properties of interval data but also have a true zero point, which signifies the absence of the quantity being measured.</li>
+<li>You can perform all arithmetic operations (addition, subtraction, multiplication, and division) on ratio data.</li>
+<li>Examples:<ul>
+<li>Age (0 years indicates the absence of age)</li>
+<li>Height in centimeters or inches (0 cm/inch indicates no height)</li>
+<li>Income (0 income indicates no income)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>In summary, these measurement scales help researchers and statisticians determine the appropriate statistical techniques and operations to apply to their data. Nominal and ordinal data are often referred to as categorical data, while interval and ratio data are considered numerical data. Understanding the measurement scale of your data is crucial for selecting the right statistical analyses and drawing meaningful conclusions from your research.</p>
+<h2 id="central-tendency-measures">Central Tendency Measures<a class="headerlink" href="#central-tendency-measures" title="Permanent link">¶</a></h2>
+<p>The concept of central tendency measures serves as a statistical tool for characterizing the core or representative value within a dataset. It offers a means to concisely encapsulate a collection of data points with a single value that embodies the essence of the entire dataset. The three primary central tendency measures commonly employed are the mean, median, and mode.</p>
+<ul>
+<li><strong>Mean (Average):</strong></li>
+</ul>
+<p>The mean, also known as the average, is derived by adding up all the values in a dataset and then dividing this sum by the number of values.</p>
+<p>The mean is sensitive to extreme values (outliers) and is primarily suited for data following a roughly normal distribution.</p>
+<ul>
+<li><strong>Median:</strong></li>
+</ul>
+<p>The median corresponds to the middle value when arranging data points in ascending or descending order. In cases with an even number of data points, the median is computed as the average of the two middle values.</p>
+<p>Calculating the median is straightforward for datasets with an odd number of values, but for datasets with an even number of values, you must determine the average of the two central values.</p>
+<ul>
+<li>
+<p>Example 1 (odd number of values): Consider the dataset [12, 7, 19, 4, 21]. After sorting it in ascending order: [4, 7, 12, 19, 21], the median is 12, which occupies the central position.</p>
+</li>
+<li>
+<p>Example 2 (even number of values): For the dataset [8, 15, 22, 11], when arranged: [8, 11, 15, 22], the median becomes the average of 11 and 15, which equals 13.</p>
+</li>
+</ul>
+<p>The median is less influenced by outliers and is often applied to skewed or non-normally distributed data.</p>
+<ul>
+<li><strong>Mode:</strong></li>
+</ul>
+<p>The mode signifies the value that appears most frequently within a dataset. A dataset can possess a solitary mode (unimodal) or multiple modes (multimodal) if two or more values share the highest frequency.</p>
+<ul>
+<li>
+<p>Example 1 (unimodal):</p>
+<p>In the dataset [5, 7, 7, 9, 11], the mode is 7 as it appears most frequently (twice).</p>
+</li>
+<li>
+<p>Example 2 (multimodal):</p>
+<p>In the dataset [3, 3, 5, 7, 7, 9], two modes emerge: 3 and 7, since both values exhibit the highest frequency (twice).</p>
+</li>
+</ul>
+<p>The mode assists in identifying the most common value(s) in categorical or discrete data</p>
+<p><br>
+The selection of the appropriate measure hinges on the nature of your data and the specific query you aim to address. In certain cases, a combination of these measures may be necessary to attain a more comprehensive understanding of central tendency within your dataset (Measures of Central Tendency, 2023).</p>
+<h2 id="distribution-frequency-analysis">Distribution - Frequency Analysis<a class="headerlink" href="#distribution-frequency-analysis" title="Permanent link">¶</a></h2>
+<p>Frequency analysis is a statistical method that describes the distribution of values in a set of data. It does this by counting the number of times each value occurs. This information can be used to understand the shape of the distribution, identify the most common values, and find out how spread out the data is (<em>Shreffler &amp; Huecker, 2023</em>).</p>
+<p><br>
+Here is an example of frequency analysis. Let's say we have a set of data that shows the heights of 100 people. We can create a frequency table to show how many people have each height. The table might look like this:</p>
+<p><br></p>
+<div class="center-table">
+<table>
+<thead>
+<tr>
+<th>Height (cm)</th>
+<th>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>160</td>
+<td>20</td>
+</tr>
+<tr>
+<td>165</td>
+<td>25</td>
+</tr>
+<tr>
+<td>170</td>
+<td>30</td>
+</tr>
+<tr>
+<td>175</td>
+<td>15</td>
+</tr>
+<tr>
+<td>180</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p>This table tells us that 20 people in the data set are 160 cm tall, 25 people are 165 cm tall, and so on. We can see that the most common height is 170 cm, and that the data is fairly evenly distributed.</p>
+<p><br>
+Frequency analysis is a powerful tool that can be used to gain insights into a data set. It is a relatively simple method to understand, but it can be very effective in summarizing and describing data.</p>
+<p><br>
+Here are some additional details about frequency analysis:</p>
+<ul>
+<li>The frequency table is the most common way to display the results of frequency analysis. It can be either a simple table or a more complex table with additional information, such as the cumulative frequency or relative frequency.</li>
+<li>The cumulative frequency is the sum of the frequencies of all the values less than or equal to a given value. The relative frequency is the frequency of a value divided by the total number of values in the data set.</li>
+<li>Frequency analysis can be used to create other graphical representations of data, such as histograms and bar charts. These graphs can be helpful in visualizing the distribution of data and identifying patterns.</li>
+<li>Frequency analysis is a versatile tool that can be used in a variety of statistical applications. It is a valuable tool for understanding data and making informed decisions.</li>
+</ul>
+<h2 id="measures-of-variability">Measures of variability<a class="headerlink" href="#measures-of-variability" title="Permanent link">¶</a></h2>
+<p>A measure of variability in statistics serves to depict the extent to which values within a dataset are dispersed, quantifying the degree of variation present in the data. Various measures of variability are available, with some of the most prevalent ones encompassing:</p>
+<ul>
+<li><strong>Range:</strong> This measure calculates the disparity between the highest and lowest values found in the dataset.</li>
+<li><strong>Interquartile Range (IQR):</strong> The IQR quantifies the deviation between the 75<sup>th</sup> and 25<sup>th</sup> percentiles, offering insights into the central 50% of the data.</li>
+<li><strong>Variance:</strong> This metric computes the average of the squared deviations from the dataset's mean.</li>
+<li><strong>Standard Deviation:</strong> The standard deviation is essentially the square root of the variance, providing a measure of dispersion around the mean.</li>
+<li><strong>Coefficient of Variation:</strong> This dimensionless statistic, obtained by dividing the standard deviation by the mean, is frequently used to compare variability among datasets with different units of measurement.</li>
+</ul>
+<p>The choice of which measure of variability to apply hinges on the specific dataset under examination and the objectives of the analysis. The range is the simplest but less sensitive to variations within the middle of the dataset. In contrast, the IQR is more responsive to mid-range variability but less influenced by outliers compared to the variance and standard deviation. The latter two are the most sensitive measures, yet they are susceptible to the influence of outliers.</p>
+<p><br>
+For illustration, suppose we possess a dataset detailing the heights of 100 individuals, where the mean height stands at 170 cm. The range, in this case, spans 20 cm (ranging from the tallest at 190 cm to the shortest at 170 cm). Meanwhile, the IQR encompasses 10 cm (with the 75<sup>th</sup> percentile at 175 cm and the 25<sup>th</sup> percentile at 165 cm). The variance amounts to 25 cm², while the standard deviation is 5 cm.</p>
+<p><br>
+Each of these variability measures offers distinct insights into the dataset. The range signifies the span between the dataset's smallest and largest values. The IQR provides information about the middle 50% of data points. The variance and standard deviation elucidate the degree of dispersion around the mean.</p>
+<p><br>
+These varied measures of variability can be employed to address diverse questions concerning the dataset. The range helps pinpoint the dataset's extremities, while the IQR focuses on the central portion. Meanwhile, the variance and standard deviation gauge the extent of data dispersion relative to the mean (Expert Help Guides: Maths: Measures of Variability, 2023).</p>
+<h2 id="measure-of-shape-distribution">Measure of Shape Distribution<a class="headerlink" href="#measure-of-shape-distribution" title="Permanent link">¶</a></h2>
+<p>In a statistic, a measure of distribution shape refers to a statistical metric that characterizes how the distribution of a dataset is structured. This measure quantifies the extent of symmetry, the level of peakiness, and the presence of outliers within the dataset.</p>
+<p>Various metrics exist to assess distribution shape, with some of the most common ones including:</p>
+<ul>
+<li><strong>Skewness:</strong> Skewness measures the degree of asymmetry in a distribution. If a distribution is not symmetrical around its mean, it is considered skewed. Skewness can be either positive (right-skewed) or negative (left-skewed).</li>
+<li><strong>Kurtosis:</strong> Kurtosis gauges the peakedness or flatness of a distribution. A distribution is described as kurtotic if its peak is more pronounced or flatter compared to a normal distribution. Kurtosis can be positive (leptokurtic), negative (platykurtic), or equal to 0 (mesokurtic).</li>
+<li><strong>Outliers:</strong> Outliers are values that significantly deviate from the rest of the data points in a distribution. They can arise due to data collection errors or genuine variations within the population.</li>
+</ul>
+<p>The selection of the appropriate measure of distribution shape depends on the specific dataset and the objectives of the analysis. Skewness and kurtosis are often used in combination to provide a comprehensive description of a distribution's shape. Outliers can be detected using various techniques, such as the interquartile range (IQR) or the Grubbs test (Measures of Shape, 2023).</p>
+<h2 id="correlation-analysis">Correlation Analysis<a class="headerlink" href="#correlation-analysis" title="Permanent link">¶</a></h2>
+<p>Correlation analysis is a statistical technique employed to assess the strength and direction of the connection between two variables. This analytical approach is bivariate in nature, focusing solely on examining the association between a pair of variables at any given time.</p>
+<p><br>
+The correlation coefficient serves as a metric for gauging the intensity of the bond between these two variables. It assumes values within the range of -1 to 1. A correlation coefficient of +1 signifies a complete positive correlation, -1 indicates an absolute negative correlation, and 0 suggests no discernible correlation.</p>
+<p><br>
+The orientation of this association is conveyed by the sign of the correlation coefficient. A positive correlation coefficient signifies that both variables move in tandem, while a negative correlation coefficient implies opposing movements.</p>
+<p><br>
+For instance, suppose we have data detailing the heights and weights of 100 individuals. Using correlation analysis, we can explore the connection between height and weight. In this scenario, the calculated correlation coefficient is 0.8, signifying a robust positive correlation. Essentially, taller individuals tend to have greater weight, whereas shorter individuals tend to have lower weight.</p>
+<p><br>
+Correlation analysis can address various inquiries, including the presence of a linear connection between two variables, the degree of this association, its direction, and whether one variable can be utilized to predict the other.</p>
+<p><br>
+This method is adaptable and applicable across diverse domains such as psychology, sociology, economics, business, and medicine. Here are additional instances where correlation analysis comes into play:</p>
+<ul>
+<li>Investigating the link between smoking habits and lung cancer incidence.</li>
+<li>Assessing the relationship between income levels and educational attainment.</li>
+<li>Exploring the correlation between body weight and height.</li>
+<li>Examining the connection between test scores and study hours.</li>
+</ul>
+<p>In essence, correlation analysis is a valuable analytical tool with a wide range of applications, enabling insights into relationships between variables in various disciplines and research areas (Correlation in Statistics: Correlation Analysis Explained, 2023).</p>
+<h2 id="reference-list">Reference List<a class="headerlink" href="#reference-list" title="Permanent link">¶</a></h2>
+<ul>
+<li>Asllani, A. (2015). Business analytics with management science models and methods (1<sup>st</sup> edition). Pearson Education.</li>
+<li>Stephanie Glen. "Correlation in Statistics: Correlation Analysis Explained" From StatisticsHowTo.com: Elementary Statistics for the rest of us! <a href="https://www.statisticshowto.com/probability-and-statistics/correlation-analysis/">https://www.statisticshowto.com/probability-and-statistics/correlation-analysis/</a>
+‌- Latrobe. (2023). <em>Measures of variability - Maths - Expert help guides at La Trobe University.</em> <a href="https://latrobe.libguides.com/maths/measures-of-variability">https://latrobe.libguides.com/maths/measures-of-variability</a>.</li>
+<li>Australia Bureau of Statistics. (2023). <em>Measures of central tendency | Australian Bureau of Statistics.</em> <a href="https://www.abs.gov.au/statistics/understanding-statistics/statistical-terms-and-concepts/measures-central-tendency">https://www.abs.gov.au/statistics/understanding-statistics/statistical-terms-and-concepts/measures-central-tendency</a>.</li>
+<li>Australia Bureau of Statistics. (2023). <em>Measures of shape | Australian Bureau of Statistics.</em> <a href="https://www.abs.gov.au/statistics/understanding-statistics/statistical-terms-and-concepts/measures-shape">https://www.abs.gov.au/statistics/understanding-statistics/statistical-terms-and-concepts/measures-shape</a>.</li>
+<li>Rachel Levy Sarfin. (2022, November 2). 5 Characteristics of Data Quality - See why each matters to your business. Precisely; <a href="https://www.precisely.com/blog/data-quality/5-characteristics-of-data-quality">https://www.precisely.com/blog/data-quality/5-characteristics-of-data-quality</a></li>
+<li>Reality Analytics. (2016, July 20). <em>Model-Driven vs Data Driven methods for Working with Sensors and Signals</em>. Medium; Medium. <a href="https://medium.com/@RealityAI/model-driven-vs-data-driven-methods-for-working-with-sensors-and-signals-98fc6ac8cc92">https://medium.com/@RealityAI/model-driven-vs-data-driven-methods-for-working-with-sensors-and-signals-98fc6ac8cc92</a></li>
+<li>Shreffler, J., &amp; Huecker, M. R. (2023, February 13). Exploratory Data Analysis: Frequencies, Descriptive Statistics, Histograms, and Boxplots. Nih.gov; StatPearls Publishing. <a href="https://www.ncbi.nlm.nih.gov/books/NBK557570/">https://www.ncbi.nlm.nih.gov/books/NBK557570/</a></li>
+<li>Catherine Cole. (2021). <em>What Is Descriptive Analytics? 5 Examples | HBS Online.</em> <a href="https://online.hbs.edu/blog/post/descriptive-analytics">https://online.hbs.edu/blog/post/descriptive-analytics</a>.</li>
+</ul></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../01_Introduction_to_Business_Analytics/05_page/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Successful Business Analytics Initiatives in Different Industries">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Successful Business Analytics Initiatives in Different Industries
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02_page/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Driven vs Model Driven Approaches">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Data Driven vs Model Driven Approaches
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      This documentation is hosted by <a href="https://ansis.com.sg/">ANSIS Pte Ltd</a>
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.code.copy", "navigation.footer", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "navigation.path", "tabs"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/atom.js"></script>
+      
+        <script src="../../../javascripts/misc.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
