@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <meta name="author" content="ANSIS (Dr. Wilson Loh W S)">
+        <meta name="author" content="['Wilson Loh']">
       
       
         <link rel="canonical" href="https://ansis-ai.github.io/applied_analytics_for_business/Course_Materials/05_Data_Mining_Techniques/20_page/">
@@ -61,7 +61,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Data Preprocessing - Applied Analytics for Business" >
+        <meta  property="og:title"  content="Data Mining Process - Applied Analytics for Business" >
       
         <meta  property="og:description"  content="None" >
       
@@ -77,7 +77,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Data Preprocessing - Applied Analytics for Business" >
+        <meta  name="twitter:title"  content="Data Mining Process - Applied Analytics for Business" >
       
         <meta  name="twitter:description"  content="None" >
       
@@ -113,7 +113,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-scope-of-data-mining" class="md-skip">
+        <a href="#steps-in-the-kdd-process" class="md-skip">
           Skip to content
         </a>
       
@@ -149,7 +149,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Preprocessing
+              Data Mining Process
             
           </span>
         </div>
@@ -1098,7 +1098,7 @@
           
   
   <span class="md-ellipsis">
-    Data Preprocessing
+    Data Mining Process
   </span>
   
 
@@ -1109,7 +1109,7 @@
         
   
   <span class="md-ellipsis">
-    Data Preprocessing
+    Data Mining Process
   </span>
   
 
@@ -1127,6 +1127,66 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#steps-in-the-kdd-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps in the KDD Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps in the KDD Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-preprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Preprocessing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-data-mining" class="md-nav__link">
+    <span class="md-ellipsis">
+      C. Data Mining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-interpretationevaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. Interpretation/Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. Knowledge
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#the-scope-of-data-mining" class="md-nav__link">
@@ -1350,6 +1410,66 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#steps-in-the-kdd-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps in the KDD Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps in the KDD Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-preprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Preprocessing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-data-mining" class="md-nav__link">
+    <span class="md-ellipsis">
+      C. Data Mining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-interpretationevaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. Interpretation/Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. Knowledge
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#the-scope-of-data-mining" class="md-nav__link">
     <span class="md-ellipsis">
       The Scope of Data Mining
@@ -1463,11 +1583,58 @@
   
 
 
-  <h1>Data Preprocessing</h1>
+  <h1>Data Mining Process</h1>
 
-<div><p>author: [Wilson Loh]
-date: 2022-05-01</p>
+<div><p>The Knowledge Discovery in Databases (KDD) process is a comprehensive method to extract useful knowledge from large datasets.The goal is to turn raw data into meaningful insights through a structured sequence of steps.</p>
 <hr>
+<h2 id="steps-in-the-kdd-process">Steps in the KDD Process<a class="headerlink" href="#steps-in-the-kdd-process" title="Permanent link">¶</a></h2>
+<p><br>
+<a class="glightbox" href="../assets/05-01.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="800" alt="KDD Process" src="../assets/05-01.png"></a></p>
+<h3 id="a-selection">A. Selection<a class="headerlink" href="#a-selection" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Description:</strong> Identifying and retrieving relevant data from large databases.</li>
+<li><strong>Example:</strong> Selecting customer transaction records from a retail database for analysis.</li>
+<li><strong>Process:</strong></li>
+<li>Identify data sources.</li>
+<li>Extract the relevant subset of data.</li>
+<li><strong>Purpose:</strong> To focus on data that is pertinent to the analysis objectives.</li>
+</ul>
+<h3 id="b-preprocessing">B. Preprocessing<a class="headerlink" href="#b-preprocessing" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Description:</strong> Cleaning and transforming the selected data to ensure quality and consistency.</li>
+<li><strong>Example:</strong> Handling missing values and correcting data inconsistencies in customer transaction records.</li>
+<li><strong>Process:</strong></li>
+<li>Data cleaning (e.g., handling missing values, removing duplicates).</li>
+<li>Data transformation (e.g., normalization, aggregation).</li>
+<li><strong>Purpose:</strong> To prepare data for analysis by eliminating noise and errors.</li>
+</ul>
+<h3 id="c-data-mining">C. Data Mining<a class="headerlink" href="#c-data-mining" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Description:</strong> Applying algorithms to discover patterns, relationships, or insights within the preprocessed data.</li>
+<li><strong>Example:</strong> Using association rule mining to find frequent itemsets in retail transactions.</li>
+<li><strong>Process:</strong></li>
+<li>Select appropriate data mining techniques (e.g., classification, clustering).</li>
+<li>Apply the techniques to extract patterns.</li>
+<li><strong>Purpose:</strong> To uncover hidden patterns and relationships in the data.</li>
+</ul>
+<h3 id="d-interpretationevaluation">D. Interpretation/Evaluation<a class="headerlink" href="#d-interpretationevaluation" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Description:</strong> Analyzing the patterns discovered during data mining to determine their significance and usefulness.</li>
+<li><strong>Example:</strong> Evaluating the business implications of frequent itemsets discovered in retail data.</li>
+<li><strong>Process:</strong></li>
+<li>Interpret the results in the context of the business or research question.</li>
+<li>Validate the findings using statistical or domain-specific criteria.</li>
+<li><strong>Purpose:</strong> To assess the value of the discovered knowledge and ensure it is actionable.</li>
+</ul>
+<h3 id="e-knowledge">E. Knowledge<a class="headerlink" href="#e-knowledge" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Description:</strong> Consolidating the evaluated insights into useful knowledge that can inform decision-making.</li>
+<li><strong>Example:</strong> Implementing promotional strategies based on identified shopping patterns.</li>
+<li><strong>Process:</strong></li>
+<li>Document the insights and patterns.</li>
+<li>Use the knowledge to make informed decisions or predictions.</li>
+<li><strong>Purpose:</strong> To apply the discovered knowledge to achieve practical benefits.</li>
+</ul>
 <h2 id="the-scope-of-data-mining">The Scope of Data Mining<a class="headerlink" href="#the-scope-of-data-mining" title="Permanent link">¶</a></h2>
 <p>The term <em>data mining</em> draws an analogy to the process of extracting valuable business insights from extensive databases, akin to mining for precious ore within a mountain. Both endeavours share the commonality of needing to navigate through vast volumes of material, whether by sifting through it systematically or by intelligently probing to pinpoint areas of value. When dealing with databases of substantial size and quality, data mining technology offers a range of capabilities that can catalyse new business opportunities, including:</p>
 <ul>
