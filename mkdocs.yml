@@ -125,6 +125,5 @@ plugins:
   - mkdocs-video
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - social
 copyright: This documentation is hosted by <a href="https://ansis.com.sg/">ANSIS Pte Ltd (loh.wilson@gmail.com)</a>
 site_author: ANSIS (Dr. Wilson Loh W S)
